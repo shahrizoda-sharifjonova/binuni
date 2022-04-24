@@ -1,3 +1,48 @@
 mixin footer()
     footer.footer
-    
+        .footer__body.container 
+            .footer__top 
+                a(href="index.html").footer__logo
+                    img(src="@img/footer-logo.svg", alt="" draggable="false" loading="lazy")
+                .footer__lists
+                    ul.footer__list 
+                        li.footer__li 
+                            a(href="#!").footer__link Оплата
+                        li.footer__li 
+                            a(href="#!").footer__link Возврат
+                        li.footer__li 
+                            a(href="#!").footer__link О платформе
+                    ul.footer__list.enable-xl 
+                        li.footer__li 
+                            a(href="#!").footer__p Договор оферты
+                        li.footer__li 
+                            a(href="#!").footer__p Пользовательское соглашение
+                        li.footer__li 
+                            a(href="#!").footer__p Обработка перснональных данных
+                .footer__images
+                    .footer__img.disable-lg
+                        img(src="@img/footer-1.png", alt="" draggable="false" loading="lazy")
+                    .footer__img.disable-lg
+                        img(src="@img/footer-2.png", alt="" draggable="false" loading="lazy")
+                    .footer__img.disable-lg
+                        img(src="@img/footer-3.png", alt="" draggable="false" loading="lazy")
+                    .footer__img.disable-lg
+                        img(src="@img/footer-4.png", alt="" draggable="false" loading="lazy")
+                    .footer__img.disable-lg
+                        img(src="@img/footer-5.png", alt="" draggable="false" loading="lazy")
+                    .footer__img.enable-lg 
+                        img(src="@img/footer-1_lg.png", alt="" draggable="false" loading="lazy")
+                    .footer__img.enable-lg 
+                        img(src="@img/footer-2_lg.png", alt="" draggable="false" loading="lazy")
+                    .footer__img.enable-lg 
+                        img(src="@img/footer-3_lg.png", alt="" draggable="false" loading="lazy")
+                    .footer__img.enable-lg 
+                        img(src="@img/footer-4_lg.png", alt="" draggable="false" loading="lazy")
+                    .footer__img.enable-lg 
+                        img(src="@img/footer-5_lg.png", alt="" draggable="false" loading="lazy")
+            .footer__info 
+                p.footer__p © 2022 «BINUNI»
+                p.footer__p.disable-xl Договор оферты
+                p.footer__p.disable-xl Пользовательское соглашение
+                p.footer__p.disable-xl Обработка перснональных данных
+                p.footer__p Developed by vysota

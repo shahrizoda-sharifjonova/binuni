@@ -1,1 +1,178 @@
-// Футер
+.footer{
+    background: #0B0E11;
+    padding-top: 25px;
+    padding-bottom: 47px;
+    @include media(1200){
+        padding-top: 36px;
+        padding-bottom: 51px;
+    }
+    @include media(992){
+        padding-top: 54px;
+        padding-bottom: 37px;
+    }
+    @include media(768){
+        padding-top: 32px;
+        padding-bottom: 43px;
+    }
+    &__body{
+        @include media(1200){
+            display: flex;
+            align-items: flex-end;
+        }
+        @include media(992){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include media(1200){
+            align-items: flex-start;
+            flex-direction: column;
+            row-gap: 47px;
+        }
+        @include media(480){
+            row-gap: 30px;
+        }
+    }
+    &__logo{
+        @include media(992){
+            width: 162px;
+        }
+        @include media(768){
+            width: 128px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        @include media(1200){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &__link{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+        letter-spacing: 0.035em;
+        color: #FFFFFF;
+        @include media(1200){
+            font-size: 18px;
+            line-height: 203%;
+        }
+        @include media(992){
+            font-size: 18px;
+            line-height: 180%;
+        }
+        @include media(768){
+            line-height: 160%;
+        }
+        @include media(480){
+            font-size: 16px;
+            line-height: 160%;
+        }
+    }
+    &__images{
+        display: flex;
+        align-items: stretch;
+        column-gap: 5px;
+        @include media(1200){
+            column-gap: 24px;
+        }
+        @include media(992){
+            display: flex;
+            justify-content: space-between;
+            column-gap: 47px;
+        }
+        @include media(768){
+            column-gap: 30px;
+        }
+        @include media(480){
+            column-gap: 19px;
+        }
+    }
+    &__img{
+        line-height: 0;
+        @include media(768){
+            width: 65px;
+        }
+        img{
+            width: 100%;
+            object-fit: cover;
+            line-height: 0;
+        }
+    }
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 50px;
+        @include media(1200){
+            justify-content: flex-start;
+            column-gap: 47px;
+        }
+        @include media(992){
+            padding-top: 40px;
+            justify-content: space-between;
+            width: 100%;
+        }
+        @include media(480){
+            padding-top: 27px;
+        }
+        .footer__p{
+            @include media(480){
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 130%;
+            }
+        }
+    }
+    &__p{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 130%;
+        color: #FFFFFF;
+        opacity: 0.7;
+        @include media(1200){
+            font-size: 18px;
+            line-height: 203%;
+        }
+        @include media(992){
+            line-height: 180%;
+        }
+        @include media(768){
+            line-height: 160%;
+        }
+        @include media(480){
+            font-size: 16px;
+            line-height: 160%;
+        }
+    }
+    &__lists{
+        @include media(1200){
+            display: flex;
+            column-gap: 67px;
+        }
+        @include media(992){
+            flex-direction: column;
+            row-gap: 24px;
+        }
+        @include media(480){
+            row-gap: 30px;
+        }
+        .footer__p{
+            @include media(992){
+                opacity: 1;
+            }
+        }
+    }
+}
