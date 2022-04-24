@@ -1,6 +1,7 @@
 .asks{
     padding-top: 100px;
     padding-bottom: 108px;
+    position: relative;
     @include media(1400){
         padding-top: 28px;
         padding-bottom: 43px;
@@ -16,6 +17,21 @@
     @include media(480){
         padding-top: 8px;
         padding-bottom: 101px;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        background: url(../img/asks-img.png) center / cover no-repeat;
+        width: 130px;
+        height: 111px;
+        top: 120px;
+        left: 95px;
+        @include media(1800){
+            top: 250px;
+        }
+        @include media(1400){
+            display: none;
+        }
     }
     &__body{
         display: flex;
