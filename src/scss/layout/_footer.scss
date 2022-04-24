@@ -14,6 +14,9 @@
         padding-top: 32px;
         padding-bottom: 43px;
     }
+    @include media(480){
+        padding-bottom: 39px;
+    }
     &__body{
         @include media(1200){
             display: flex;
@@ -97,11 +100,17 @@
         @include media(480){
             column-gap: 19px;
         }
+        @include media(360){
+            column-gap: 10px;
+        }
     }
     &__img{
         line-height: 0;
         @include media(768){
             width: 65px;
+        }
+        @include media(480){
+            width: 50px;
         }
         img{
             width: 100%;
@@ -127,9 +136,13 @@
             padding-top: 27px;
         }
         .footer__p{
-            @include media(480){
+            @include media(768){
                 font-weight: 400;
                 font-size: 14px;
+                line-height: 130%;
+            }
+            @include media(480){
+                font-size: 12px;
                 line-height: 130%;
             }
         }

@@ -27,7 +27,7 @@ headerToggle.forEach(el=> {
         headerContent.classList.remove('active')
     })
 });
-
+ 
 new Swiper(".about__swiper", {
     slidesPerView: "auto",
     spaceBetween: 15,
