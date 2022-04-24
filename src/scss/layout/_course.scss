@@ -1,0 +1,261 @@
+.course{
+    padding-top: 100px;
+    padding-bottom: 85px;
+    @include media(1200){
+        padding-top: 46px;
+        padding-bottom: 44px;
+    }
+    @include media(992){
+        padding-top: 61px;
+        padding-bottom: 30px;
+    }
+    @include media(768){
+        padding-top: 33px;
+        padding-bottom: 54px;
+    }
+    @include media(480){
+        padding-top: 37px;
+        padding-bottom: 37px;
+    }
+    &__title{
+        margin-bottom: 69px;
+        @include media(1200){
+            margin-bottom: 38px;
+        }
+        @include media(992){
+            margin-bottom: 33px;
+        }
+        @include media(768){
+            margin-bottom: 37px;
+        }
+        @include media(480){
+            margin-bottom: 29px;
+        }
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 120px;
+        border-bottom: 1px solid #0ECB81;
+        @include media(1200){
+            padding-bottom: 41px;
+        }
+        @include media(992){
+            flex-direction: column;
+            row-gap: 24px;
+        }
+        @include media(768){
+            padding-bottom: 68px;
+            row-gap: 32px;
+        }
+        @include media(480){
+            row-gap: 16px;
+            padding-bottom: 40px;
+        }
+    }
+    &__item{
+        max-width: 283px;
+        width: 100%;
+        @include media(992){
+            max-width: 100%;
+            background: #FAFAFA;
+            border-radius: 4px;
+            padding: 30px 28px;
+        }
+        @include media(768){
+            padding: 37px 17px 36px 16px;
+        }
+        @include media(480){
+            padding: 20px 11px 28px 9px;
+        }
+        &-content{
+            @include media(992){
+                display: flex;
+                align-items: center;
+                column-gap: 24px;
+            }
+            @include media(768){
+                column-gap: 18px;
+            }
+            @include media(480){
+                margin-bottom: 15px;
+            }
+        }
+    }
+    &__img{
+        margin-bottom: 36px;
+        line-height: 0;
+        @include media(1200){
+            height: 140px;
+            margin-bottom: 18px;
+        }
+        @include media(992){
+            margin-bottom: 0;
+        }
+        @include media(768){
+            height: 60px;
+        }
+        img{
+            line-height: 0;
+            object-fit: cover;
+            @include media(1200){
+                height: 100%;
+            }
+        }
+    }
+    &__subtitle{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 125%;
+        color: #000000;
+        margin-bottom: 28px;
+        @include media(1200){
+            line-height: 140%;
+            margin-bottom: 18px;
+        }
+        @include media(992){
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 140%;
+            margin-bottom: 16px;
+        }
+        @include media(768){
+            margin-bottom: 12px;
+        }
+        @include media(480){
+            margin-bottom: 0px;
+            font-size: 18px;
+            line-height: 140%;
+        }
+    }
+    &__desc{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+        color: #000000;
+        @include media(1200){
+            line-height: 170%;
+            color: rgba(0, 0, 0, 0.85);
+        }
+        @include media(992){
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 125%;
+        }
+        &.enable-smm{
+            @include media(480){
+                display: inline-block !important;
+                font-size: 14px;
+                line-height: 125%;
+            }
+        }
+    }
+    &__bottom{
+        padding-top: 99px;
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 102px;
+        align-items: flex-start;
+        position: relative;
+        @include media(1200){
+            padding-top: 28px;
+            flex-direction: column;
+        }
+        @include media(768){
+            padding-top: 33px;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            background: url(../img/course-img.svg) center / cover no-repeat;
+            width: 71px;
+            height: 65px;
+            top: 45px;
+            right: 0;
+            @include media(1200){
+                display: none;
+            }
+        }
+        .course__title{
+            max-width: 424px;
+            width: 100%;
+            @include media(1200){
+                max-width: 100%;
+                width: 100%;
+                margin-bottom: 28px;
+            }
+            @include media(992){
+                margin-bottom: 48px;
+            }
+            @include media(768){
+                margin-bottom: 39px;
+            }
+            @include media(480){
+                margin-bottom: 33px;
+            }
+        }
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 27px;
+        padding-top: 21px;
+        @include media(1200){
+            padding-top: 0;
+            row-gap: 24px;
+        }
+        @include media(480){
+            row-gap: 12px;
+        }
+    }
+    &__li{
+        font-family:Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 125%;
+        color: #000000;
+        position: relative;
+        padding-left: 28px;
+        max-width: 682px;
+        width: 100%;
+        @include media(1200){
+            padding-left: 26px;
+            max-width: 100%;
+            color: rgba(0, 0, 0, 0.85);
+        }
+        @include media(992){
+            padding-left: 28px;
+        }
+        @include media(480){
+            font-size: 14px;
+            line-height: 170%;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            border: 3px solid #0ECB81;
+            transform: rotate(45deg);
+            width: 4px;
+            height: 4px;
+            top: 2px;
+            left: 0;
+            @include media(1200){
+                width: 6px;
+                height: 6px;
+            }
+            @include media(992){
+                width: 8px;
+                height: 8px;
+            }
+            @include media(480){
+                width: 4px;
+                height: 4px;
+            }
+        }
+    }
+}

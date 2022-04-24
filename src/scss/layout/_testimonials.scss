@@ -1,0 +1,173 @@
+.testimonials{
+    background: #FAFAFA;
+    padding-top: 98px;
+    padding-bottom: 147px;
+    position: relative;
+    @include media(1400){
+        padding-top: 62px;
+        padding-bottom: 63px;
+        width: 100%;
+        overflow: hidden;
+    }
+    @include media(992){
+        padding-top: 47px;
+        padding-bottom: 80px;
+    }
+    @include media(768){
+        padding-top: 57px;
+        padding-bottom: 56px;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        background: url(../img/testimonials-before.png) center / cover no-repeat;
+        width: 145px;
+        height: 191px;
+        right: 99px;
+        top: 50px;
+        @include media(1700){
+            width: 140px;
+            height: 120px;
+            background: url(../img/testimonials-before.png) center / contain no-repeat;
+        }
+        @include media(1400){
+            display: none;
+        }
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        background: url(../img/testimonials-after.png) center / cover no-repeat;
+        width: 52px;
+        height: 52px;
+        left: 123px;
+        top: 205px;
+        @include media(1700){
+            left: 18px;
+            top: 145px;
+            background: url(../img/testimonials-after.png) center / contain no-repeat;
+        }
+        @include media(1400){
+            display: none;
+        }
+    }
+    &__title{
+        margin-bottom: 88px;
+        @include media(1400){
+            margin-bottom: 48px;
+        }
+        @include media(992){
+            margin-bottom: 41px;
+        }
+    }
+    &__slider{
+        width: 100%;
+        position: relative;
+    }
+    .swiper{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        @include media(1400){
+            overflow: visible;
+        }
+        &-wrapper{
+            display: flex;
+            width: max-content;
+        }
+        &-slide{
+            position: relative;
+            @include media(1400){
+                width: 272px;
+            }
+            @include media(992){
+                width: 270px;
+            }
+            @include media(768){
+                width: 223px;
+            }
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    &__play{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        @include media(992){
+            width: 63px;
+            height: 63px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &__buttons{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+    }   
+    &__button{
+        &-prev{
+            &.swiper-button-disabled{
+                opacity: 0.5;
+            }
+            position: absolute;
+            left: -80px;
+            width: 50px;
+            height: 50px;
+            @include media(1470){
+                left: -40px;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                background: url(../img/testimonials-prev.svg) center / cover no-repeat;
+                width: 100%;
+                height: 100%;
+                left: 0px;
+            }
+        }
+        &-next{
+            &.swiper-button-disabled{
+                opacity: 0.5;
+            }
+            position: absolute;
+            right: -80px;
+            width: 50px;
+            height: 50px;
+            @include media(1470){
+                right: -40px;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                background: url(../img/testimonials-next.svg) center / cover no-repeat;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &__abs{
+        position: absolute;
+        right: 115px;
+        bottom: 65px;
+        width: 64px;
+        @include media(1400){
+            display: none;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
