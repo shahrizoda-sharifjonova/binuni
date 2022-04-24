@@ -1,0 +1,22 @@
+mixin header()
+    header.header
+        nav.header__nav.container
+            a(href="index.html").header__logo
+                img(src="@img/header-logo.svg", alt="" draggable="false" loading="lazy")
+            .header__content
+                ul.header__list
+                    .container
+                        li.header__li
+                            a(href="#!").header__link.header-toggle  Курсы
+                        li.header__li
+                            a(href="#!").header__link.header-toggle  Карта интерфейса Binance
+                        li.header__li
+                            a(href="#!").header__link.header-toggle  Wiki
+                        li.header__li
+                            a(href="#!").header__link.header-toggle  О проекте
+                .header__btns
+                    .container
+                        a(href="#!").header__btn.header-toggle Войти
+                        a(href="#!").header__btn.btn-primary.header-toggle Регистрация
+            .menu.enable-mid
+                span.menu-btn

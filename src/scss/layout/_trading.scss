@@ -1,0 +1,150 @@
+.trading{
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background: #FAFAFA;
+    position: relative;
+    @include media(1400){
+        padding-top: 25px;
+        padding-bottom: 52px;
+    }
+    @include media(480){
+        padding-top: 39px;
+        padding-bottom: 55px;
+    }
+    &::before{
+        content: '';
+        background: url(../img/trading-img-1.svg) center/ cover no-repeat;
+        position: absolute;
+        width: 121px;
+        height: 141px;
+        right: 88px;
+        top: 20px;
+        @include media(1400){
+            width: 68px;
+            height: 78px;
+            right: 21px;
+            top: 25px;
+        }
+        @include media(992){
+            display: none;
+        }
+    }
+    &::after{
+        content: '';
+        background: url(../img/trading-img-2.svg) center / cover no-repeat;
+        position: absolute;
+        width: 127px;
+        height: 128px;
+        left: 62px;
+        bottom: 43px;
+        @include media(1570){
+            display: none;
+        }
+    }
+    &__title{
+        margin-bottom: 80px;
+        @include media(1400){
+            margin-bottom: 70px;
+        }
+        @include media(992){
+            margin-bottom: 55px;
+        }
+        @include media(768){
+            margin-bottom: 35px;
+        }
+        @include media(480){
+            margin-bottom: 32px;
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        @include media(1400){
+            row-gap: 20px;
+        }
+        @include media(768){
+            row-gap: 24px;
+        }
+        @include media(480){
+            row-gap: 36px;
+        }
+    }
+    &__item{
+        display: flex;
+        align-items: flex-start;
+        column-gap: 25px;
+        max-width: 334px;
+        width: 100%;
+        @include media(1400){
+            max-width: calc(50% - 10px);
+            column-gap: 13px;
+            display: flex !important;
+        }
+        @include media(992){
+            max-width: 50%;
+        }
+        @include media(768){
+            max-width: 100%;
+        }
+        &.enable-xxl{
+            @include media(480){
+                display: none !important;
+            }
+        }
+    }
+    &__subtitle{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 125%;
+        color: #000000;
+        margin-bottom: 15px;
+        @include media(1400){
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 150%;
+            margin-bottom: 12px;
+        }
+        @include media(992){
+            margin-bottom: 24px;
+        }
+        @include media(480){
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+    }
+    &__desc{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+        color: #000000;
+        @include media(1400){
+            line-height: 160%;
+            color: rgba(0, 0, 0, 0.85);
+        }
+        @include media(480){
+            font-size: 14px;
+            line-height: 140%;
+        }
+    }
+    &__icon{
+        width: 27px;
+        min-width: 27px;
+        @include media(1400){
+            margin-top: 6px;
+            width: 24px;
+            min-width: 24px;
+        }
+        @include media(480){
+            margin-top: 0;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
