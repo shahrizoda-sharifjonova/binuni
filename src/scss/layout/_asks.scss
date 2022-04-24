@@ -1,8 +1,44 @@
 .asks{
+    padding-top: 100px;
+    padding-bottom: 108px;
+    @include media(1400){
+        padding-top: 28px;
+        padding-bottom: 43px;
+    }
+    @include media(992){
+        padding-top: 30px;
+        padding-bottom: 34px;
+    }
+    @include media(768){
+        padding-top: 44px;
+        padding-bottom: 45px;
+    }
+    @include media(480){
+        padding-top: 8px;
+        padding-bottom: 101px;
+    }
     &__body{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        @include media(1400){
+            flex-direction: column;
+            row-gap: 50px;
+        }
+        @include media(480){
+            row-gap: 35px;
+        }
+    }
+    &__accordion{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        @include media(1400){
+            row-gap: 36px;
+        }
+        @include media(480){
+            row-gap: 32px;
+        }
     }
     .accordion{
         &__button{
@@ -13,8 +49,129 @@
             line-height: 125%;
             color: #000000;
             display: flex;
-            align-items: center;
-            column-gap: 21px;
+            align-items: flex-start;
+            column-gap: 38px;
+            max-width: 765px;
+            width: 100%;
+            text-align: left;
+            @include media(1400){
+                max-width: 100%;
+                column-gap: 21px;
+            }
+            @include media(768){
+                column-gap: 19px;
+            }
+            @include media(480){
+                font-size: 18px;
+                line-height: 125%;
+                column-gap: 11px;
+            }
+            &.active{
+                .accordion__btn{
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+        &__btn{
+            background: #FCD535;
+            position: relative;
+            min-width: 25px;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            @include media(1400){
+                min-width: 48px;
+                width: 48px;
+                height: 48px;
+            }
+            @include media(768){
+                min-width: 36px;
+                width: 36px;
+                height: 36px;
+            }
+            @include media(480){
+                min-width: 25px;
+                width: 25px;
+                height: 25px;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                background: #000;
+                width: 11px;
+                height: 1px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50% , -50%);
+                z-index: 1;
+                @include media(1400){
+                    width: 22px;
+                    height: 2px;
+                }
+                @include media(768){
+                    width: 15px;
+                    height: 1px;
+                }
+                @include media(480){
+                    width: 11px;
+                }
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                background: #000;
+                width: 11px;
+                height: 1px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50% , -50%) rotate(90deg);
+                z-index: 1;
+                @include media(1400){
+                    width: 22px;
+                    height: 2px;
+                }
+                @include media(768){
+                    width: 15px;
+                    height: 1px;
+                }
+                @include media(480){
+                    width: 11px;
+                }
+            }
+        }
+        &__content{
+            padding-top: 30px;
+            padding-left: 63px;
+            max-width: 613px;
+            width: 100%;
+            display: none;
+            @include media(1400){
+                padding-left: 69px;
+                max-width: 100%;
+            }
+            @include media(768){
+                padding-top: 24px;
+                padding-left: 55px;
+            }
+            @include media(480){
+                padding-top: 22px;
+                padding-left: 36px;
+            }
+            p{
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 125%;
+                color: #3C2E10;
+                @include media(480){
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 125%;
+                }
+            }
         }
     }
 }

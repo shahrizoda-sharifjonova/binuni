@@ -53,6 +53,8 @@ new Swiper(".testimonials__swiper", {
     }
 });
 
+import $ from 'jquery'
+
 $(document).ready(function() {
     $(".accordion > .accordion__button").on("click", function() {
       if ($(this).hasClass("active")) {
