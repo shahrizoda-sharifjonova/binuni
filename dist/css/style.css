@@ -819,7 +819,6 @@
   line-height: 125%;
   color: #000000;
   position: relative;
-  padding-left: 19px;
 }
 
 .about__li::before {
@@ -1629,6 +1628,10 @@ a {
 
   .about__list {
     row-gap: 12px;
+  }
+
+  .about__li {
+    padding-left: 19px;
   }
 
   .about__li::before {
@@ -2711,6 +2714,7 @@ a {
 
   .about__body.container {
     padding-right: 0;
+    padding-left: 0;
   }
 
   .about__content {
@@ -2728,6 +2732,11 @@ a {
 
   .about__slider {
     display: block;
+  }
+
+  .about .swiper {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .trading {

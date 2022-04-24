@@ -17,6 +17,7 @@
         &.container{
             @include media(480){
                 padding-right: 0;
+                padding-left: 0;
             }
         }
     }
@@ -84,7 +85,9 @@
         line-height: 125%;
         color: #000000;
         position: relative;
-        padding-left: 19px;
+        @include media(1400){
+            padding-left: 19px;
+        }
         &::before{
             content: '';
             position: absolute;
@@ -190,6 +193,10 @@
         width: 100%;
         overflow: hidden;
         position: relative;
+        @include media(480){
+            padding-left: 15px;
+            padding-right: 15px;
+        }
         &-wrapper{
             display: flex;
             width: max-content;

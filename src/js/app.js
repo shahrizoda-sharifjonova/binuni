@@ -14,7 +14,7 @@ const headerToggle = document.querySelectorAll('.header-toggle');
 
 menu.addEventListener('click', (e)=>{
     menu.classList.toggle('active')
-    headerList.classList.toggle('active')
+    headerList.classList.toggle('active') 
     body.classList.toggle('active')
     headerContent.classList.toggle('active')
 })
