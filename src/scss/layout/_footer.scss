@@ -86,6 +86,7 @@
         display: flex;
         align-items: stretch;
         column-gap: 5px;
+        cursor: pointer;
         @include media(1200){
             column-gap: 24px;
         }
