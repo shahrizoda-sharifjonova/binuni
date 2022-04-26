@@ -1381,6 +1381,188 @@
   color: #3C2E10;
 }
 
+.programms {
+  background: #FAFAFA;
+  padding: 115px 0 150px 0;
+  position: relative;
+}
+
+.programms__el {
+  position: absolute;
+}
+
+.programms__el_1 {
+  top: 184px;
+  left: 142px;
+}
+
+.programms__el_2 {
+  top: 81px;
+  right: 380px;
+}
+
+.programms__el_3 {
+  bottom: 167px;
+  left: 78px;
+}
+
+.programms__el_4 {
+  bottom: 159px;
+  right: 321px;
+}
+
+.programms__title {
+  margin-bottom: 19px;
+}
+
+.programms__subtitle {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 68px;
+}
+
+.programms__subtitle span {
+  color: #0ECB81;
+}
+
+.programms__left {
+  min-width: 427px;
+  width: 427px;
+}
+
+.programms__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-column-gap: 39px;
+     -moz-column-gap: 39px;
+          column-gap: 39px;
+}
+
+.programms__item:not(:last-of-type) {
+  padding-bottom: 35px;
+  position: relative;
+}
+
+.programms__item:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  width: 1px;
+  left: 12px;
+  height: 100%;
+  z-index: 1;
+  background: #0ECB81;
+}
+
+.programms .accordion:not(:last-of-type) {
+  padding-bottom: 60px;
+}
+
+.programms .accordion__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 39px;
+     -moz-column-gap: 39px;
+          column-gap: 39px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.programms .accordion__button.active .programms__left::before {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  border-radius: 0 3px 3px 0;
+}
+
+.programms .accordion__button.active .programms__left::after {
+  height: calc(100% + 27px);
+}
+
+.programms .accordion__button .programms__left {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 125%;
+  color: #000000;
+  padding-left: 63px;
+  position: relative;
+}
+
+.programms .accordion__button .programms__left::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: url("../img/acc-btn.svg") center/cover no-repeat;
+  -webkit-transition: 300ms linear;
+  -o-transition: 300ms linear;
+  transition: 300ms linear;
+  z-index: 2;
+}
+
+.programms .accordion__button .programms__left::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  width: 1px;
+  left: 12px;
+  height: 0px;
+  z-index: 1;
+  background: #0ECB81;
+}
+
+.programms .accordion__button .programms__right {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 125%;
+  color: #0ECB81;
+}
+
+.programms .accordion__content {
+  display: none;
+  padding-top: 30px;
+}
+
+.programms .accordion__content .programms__left {
+  padding-left: 63px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 125%;
+  color: #3C2E10;
+  position: relative;
+}
+
+.programms .accordion__content .programms__left::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  width: 15px;
+  height: 15px;
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.programms .accordion__content .programms__right {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 125%;
+  color: #3C2E10;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1511,6 +1693,10 @@ a {
 @media (max-width: 1800px) {
   .asks::before {
     top: 250px;
+  }
+
+  .programms__el {
+    display: none;
   }
 }
 
@@ -1935,6 +2121,109 @@ a {
   .course__li::before {
     width: 6px;
     height: 6px;
+  }
+
+  .programms {
+    padding: 55px 0 30px 0;
+  }
+
+  .programms__title {
+    display: inline;
+  }
+
+  .programms__subtitle {
+    display: inline;
+    float: right;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .programms__item:not(:last-of-type) {
+    padding-bottom: 28px;
+  }
+
+  .programms__item:not(:last-of-type)::after {
+    display: none;
+  }
+
+  .programms .accordion:not(:last-of-type) {
+    padding-bottom: 0;
+  }
+
+  .programms .accordion {
+    background: #fff;
+    padding-bottom: 0;
+    padding: 25px 15px 27px 15px !important;
+    border-radius: 4px;
+  }
+
+  .programms .accordion:not(:last-of-type) {
+    margin-bottom: 24px;
+  }
+
+  .programms .accordion-container {
+    margin-top: 60px;
+  }
+
+  .programms .accordion__button {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 24px;
+  }
+
+  .programms .accordion__button .programms__left {
+    padding-left: 0;
+    padding-right: 60px;
+    width: 100%;
+    font-size: 24px;
+    line-height: 125%;
+  }
+
+  .programms .accordion__button .programms__left::before {
+    -webkit-transition: 0ms;
+    -o-transition: 0ms;
+    transition: 0ms;
+    right: -15px;
+    top: 8px;
+    left: auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 3px 0 0 3px;
+    background: url("../img/acc-btn-sm.svg") center/cover no-repeat;
+  }
+
+  .programms .accordion__button .programms__left::after {
+    display: none;
+  }
+
+  .programms .accordion__button .programms__right {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 125%;
+  }
+
+  .programms .accordion__content .programms__left {
+    padding-left: 19px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 125%;
+    min-width: 50%;
+    width: 50%;
+  }
+
+  .programms .accordion__content .programms__left::before {
+    width: 8px;
+    height: 8px;
+    border: 2px solid #0ECB81;
+  }
+
+  .programms .accordion__content .programms__right {
+    font-size: 16px;
+    line-height: 140%;
   }
 }
 
@@ -2594,6 +2883,48 @@ a {
     padding-top: 24px;
     padding-left: 55px;
   }
+
+  .programms__subtitle {
+    float: none;
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 40px;
+  }
+
+  .programms__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 16px;
+  }
+
+  .programms .accordion {
+    padding: 40px 15px 40px 15px;
+  }
+
+  .programms .accordion-container {
+    margin-top: 0;
+  }
+
+  .programms .accordion__button .programms__left {
+    min-width: 0;
+  }
+
+  .programms .accordion__button .programms__left::before {
+    width: 50px;
+    height: 50px;
+    top: -3px;
+  }
+
+  .programms .accordion__content .programms__left {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 125%;
+    padding-left: 22px;
+    min-width: 100%;
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2613,6 +2944,74 @@ a {
 
   .disable-sm {
     display: none !important;
+  }
+
+  .programms__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 38px;
+  }
+
+  .programms__item {
+    row-gap: 8px;
+  }
+
+  .programms .accordion {
+    padding: 18px 15px 18px 15px;
+  }
+
+  .programms .accordion__button {
+    row-gap: 9px;
+  }
+
+  .programms .accordion__button .programms__left {
+    font-size: 18px;
+    line-height: 125%;
+  }
+
+  .programms .accordion__button .programms__right {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+  }
+
+  .programms .accordion__content {
+    padding-bottom: 38px;
+    position: relative;
+  }
+
+  .programms .accordion__content::before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 130px;
+    height: 3px;
+    background: #0ECB81;
+    border-radius: 24px;
+  }
+
+  .programms .accordion__content .programms__left {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 125%;
+    padding-left: 16px;
+  }
+
+  .programms .accordion__content .programms__left::before {
+    width: 4px;
+    height: 4px;
+    top: 4.5px;
+  }
+
+  .programms .accordion__content .programms__right {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 125%;
   }
 }
 
