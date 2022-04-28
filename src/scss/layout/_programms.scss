@@ -89,7 +89,7 @@
                 top: 3px;
                 width: 1px;
                 left: 12px;
-                height: 100%;
+                height: 104%;
                 z-index: 1;
                 background: #0ECB81;
                 @include media(1200){
@@ -146,7 +146,7 @@
                     border-radius: 0 3px 3px 0;
                 }
                 .programms__left::after{
-                    height: calc(100% + 27px);
+                    height: calc(100% + 30px);
                 }
             }
             .programms__left{
