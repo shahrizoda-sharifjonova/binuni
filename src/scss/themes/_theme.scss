@@ -1,4 +1,3 @@
-// Тема по умолчанию
 *{
     margin: 0;
     padding: 0;
@@ -68,5 +67,18 @@ a{
     }
     &__span{
         color: #0ECB81;
+    }
+}
+input[type="checkbox"]{
+    appearance: none;
+    background: #fff;
+    border: 1px solid #0ECB81;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    border-radius: 4px;
+    &:checked{
+        background: url('../img/chk.svg'), #fff;
+        background-size: 100% 100%;
     }
 }
