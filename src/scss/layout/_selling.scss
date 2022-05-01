@@ -288,11 +288,11 @@
             }
         }
     }
-}
-&__row{
-    &.selling__div{
-        @include media(992){
-            row-gap: 47px !important;
+    &__row{
+        &.selling__div{
+            @include media(992){
+                row-gap: 47px !important;
+            }
         }
     }
 }

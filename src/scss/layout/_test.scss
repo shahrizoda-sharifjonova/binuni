@@ -1,0 +1,267 @@
+.test{
+    background: #F5F5F5;
+    padding: 38px 88px 45px 45px;
+    margin-bottom: 60px;
+    @include media(1400){
+        padding: 32px 20px 28px 15px;
+        margin-bottom: 47px;
+    }
+    @include media(992){
+        margin-bottom: 66px;
+        padding: 28px 15px;
+    }
+    @include media(768){
+        margin-bottom: 54px;
+    }
+    @include media(480){
+        margin-bottom: 37px;
+        padding: 18px 16px 19px 14px;
+    }
+    &__top{
+        border-bottom: 2px solid #0ECB81;
+        padding-bottom: 23px;
+        @include media(1400){
+            padding-bottom: 29px;
+        }
+        @include media(768){
+            padding-bottom: 25px;
+        }
+        @include media(480){
+            padding-bottom: 22px;
+        }
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+        margin-bottom: 35px;
+        @include media(1400){
+            margin-bottom: 18px;
+        }
+        @include media(992){
+            margin-bottom: 24px;
+        }
+        @include media(768){
+            margin-bottom: 12px;
+        }
+        @include media(480){
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 15px;
+        }
+    }
+    &__desc{
+        font-family:Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 180%;
+        color: #000000;
+        @include media(1400){
+            font-size: 18px;
+            line-height: 160%;
+        }
+        @include media(480){
+            font-size: 14px;
+            line-height: 180%;
+        }
+    }
+    &__bottom{
+        padding-top: 35px;
+        @include media(1400){
+            padding-top: 28px;
+        }
+        @include media(768){
+            padding-top: 18px;
+        }
+    }
+    &__subtitle{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 135%;
+        color: #000000;
+        margin-bottom: 20px;
+        @include media(1400){
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 135%;
+            margin-bottom: 18px;
+        }
+        @include media(768){
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 135%;
+            margin-bottom: 14px;
+        }
+        @include media(480){
+            font-size: 18px;
+            line-height: 135%;
+            margin-bottom: 14px;
+        }
+    }
+    &__p{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 180%;
+        color: #000000;
+        margin-bottom: 35px;
+        @include media(1400){
+            font-size: 18px;
+            line-height: 180%;
+            margin-bottom: 29px;
+        }
+        @include media(992){
+            margin-bottom: 24px;
+        }
+        @include media(480){
+            font-size: 14px;
+            line-height: 180%;
+            margin-bottom: 25px;
+        }
+    }
+    &__span{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 135%;
+        color: #000000;
+        margin-bottom: 35px;
+        display: block;
+        @include media(1400){
+            margin-bottom: 21px;
+        }
+        @include media(768){
+            margin-bottom: 27px;
+        }
+        @include media(480){
+            font-size: 16px;
+            line-height: 135%;
+            margin-bottom: 49px;
+        }
+    }
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        margin-bottom: 36px;
+        @include media(1400){
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        @include media(992){
+            margin-bottom: 48px;
+        }
+        @include media(768){
+            gap: 20px;
+            margin-bottom: 34px;
+        }
+        @include media(480){
+            margin-bottom: 59px;
+        }
+    }
+    &__item{
+        border: 1px solid #909090;
+        border-radius: 5px;
+        max-width: 334px;
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        @include media(1400){
+            max-width: calc(50% - 12px);
+            width: calc(50% - 13px);
+            padding: 32px 12px;
+        }
+        @include media(768){
+            max-width: 100%;
+            width: 100%;
+            padding: 15px 105px 15px 15px;
+        }
+        @include media(480){
+            padding: 14px 20px 14px 15px;
+        }
+        &:nth-of-type(3){
+            padding: 22px 3px 22px 12px;
+            @include media(768){
+                padding: 15px 105px 15px 15px;
+            }
+            @include media(480){
+                padding: 14px 20px 14px 15px;
+            }
+        }
+    }
+    &__txt{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+        color: #000000;
+        padding-left: 23px;
+        position: relative;
+        @include media(480){
+            font-size: 14px;
+            line-height: 125%;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #0ECB81;
+            border-radius: 50%;
+            top: 2px;
+            left: 0;
+            @include media(768){
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    &__info{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+        color: #000000;
+        opacity: 0.5;
+        text-align: left;
+        @include media(1400){
+            font-size: 18px;
+            line-height: 125%;
+        }
+        @include media(480){
+            font-size: 16px;
+            line-height: 125%;
+        }
+    }
+    &__back{
+        width: 55%;
+        @include media(1400){
+            border: none;
+            width: max-content;
+        }
+        @include media(1400){
+            font-size: 18px;
+            line-height: 125%;
+        }
+        @include media(480){
+            font-size: 16px;
+            line-height: 125%;
+        }
+    }
+    &__buttons{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 670px;
+        width: 100%;
+        @include media(1400){
+            max-width: 100%;
+            justify-content: space-between;
+        }
+    }
+}
