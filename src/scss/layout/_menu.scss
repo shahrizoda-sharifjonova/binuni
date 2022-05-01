@@ -56,12 +56,19 @@
     }
     .accordion{
         &__item{
-            &.active{
-                .accordion__p{
-                    &:nth-of-type(1){
-                        span{
-                            color: #000000;
-                        }
+            &:nth-of-type(even){
+                .accordion__top{
+                    @include media(480){
+                        background: #25272F;
+                    }
+                }
+            }
+        }
+        &.active{
+            .accordion__p{
+                &:nth-of-type(1){
+                    span{
+                        color: #000000;
                     }
                 }
             }
@@ -167,7 +174,6 @@
         }
     }
 }
-
 
 .sidebars{
     @include media(1400){
