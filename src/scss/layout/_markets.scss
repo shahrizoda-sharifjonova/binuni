@@ -240,7 +240,19 @@
     }
     .account{
         position: relative;
-        padding-bottom: 15px;
+        padding-bottom: 50px;
+        @include media(1400){
+            padding-bottom: 44px;
+        }
+        @include media(992){
+            padding-bottom: 67px;
+        }
+        @include media(768){
+            padding-bottom: 53px;
+        }
+        @include media(480){
+            padding-bottom: 38px;
+        }
         &__subtitle{
             font-weight: 500;
             font-size: 18px;
