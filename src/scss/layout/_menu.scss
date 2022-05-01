@@ -1,7 +1,11 @@
-.menu{
-    max-width: 312px;
+.sidebar{
+    min-width: 336px;
     width: 100%;
-    padding-left: 24px;
+    flex: 1 1 auto;
+    @include media(1400){
+        max-width: 100%;
+        min-width: 0;
+    }
     &__btn{
         width: 24px;
         height: 16px;
@@ -38,6 +42,18 @@
             margin: auto;
         }
     }
+    &-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        @include media(1400){
+            padding-right: 0;
+        }
+        @include media(576){
+            padding-right: 15px;
+        }
+    }
     .accordion{
         &__item{
             &.active{
@@ -58,11 +74,18 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @include media(1400){
+                display: flex !important;
+            }
             span{
                 font-weight: 500;
                 font-size: 24px;
                 line-height: 28px;
                 color: #EAECEF;
+                @include media(480){
+                    font-size: 18px;
+                    line-height: 21px;
+                }
             }
         }
         &__top{
@@ -76,12 +99,20 @@
                 color: #EAECEF;
             }
         }
+        &__content{
+            @include media(1400){
+                display: none;
+            }
+        }
         &__list{
             display: flex;
             flex-direction: column;
             row-gap: 9px;
-            margin-top: 21px;
+            padding-top: 21px;
             margin-bottom: 30px;
+            padding-bottom: 25px;
+            background: #FAFAFA;
+            border-radius: 0px 0px 3px 3px;
         }
         &__p{
             font-weight: 400;
@@ -134,5 +165,12 @@
             color: #FFFFFF;
             margin-left: 39px;
         }
+    }
+}
+
+
+.sidebars{
+    @include media(1400){
+        width: 100%;
     }
 }

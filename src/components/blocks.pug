@@ -1,3 +1,132 @@
 mixin blocks()
-    include menu
-    +menu
+    .blocks 
+        .blocks__row.container 
+            .blocks__col 
+                .markets 
+                    .markets__body
+                        .markets__top 
+                            h2.markets__title.subtitle Блок 1. Блокчейн и крипторынок
+                            p.markets__desc 
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.49984 1.41699C4.59409 1.41699 1.4165 4.59458 1.4165 8.50033C1.4165 12.4061 4.59409 15.5837 8.49984 15.5837C12.4056 15.5837 15.5832 12.4061 15.5832 8.50033C15.5832 4.59458 12.4056 1.41699 8.49984 1.41699ZM8.49984 14.167C5.37538 14.167 2.83317 11.6248 2.83317 8.50033C2.83317 5.37587 5.37538 2.83366 8.49984 2.83366C11.6243 2.83366 14.1665 5.37587 14.1665 8.50033C14.1665 11.6248 11.6243 14.167 8.49984 14.167Z" fill="black"/>
+                                    <path d="M9.20817 4.95801H7.7915V9.20801H12.0415V7.79134H9.20817V4.95801Z" fill="black"/>
+                                </svg>
+                                span 15 мин.
+                                | Среднее время изучения урока
+                        .markets__slider 
+                            .markets__swiper.swiper 
+                                .markets__swiper-wrapper.swiper-wrapper 
+                                    .markets__slide.swiper-slide 
+                                        img(src="@img/markets-img.png", alt="" draggable="false" loading="lazy")
+                                    .markets__slide.swiper-slide 
+                                        img(src="@img/markets-img.png", alt="" draggable="false" loading="lazy")
+                                    .markets__slide.swiper-slide 
+                                        img(src="@img/markets-img.png", alt="" draggable="false" loading="lazy")
+                                    .markets__slide.swiper-slide 
+                                        img(src="@img/markets-img.png", alt="" draggable="false" loading="lazy")
+                                    .markets__slide.swiper-slide 
+                                        img(src="@img/markets-img.png", alt="" draggable="false" loading="lazy")
+                                    .markets__slide.swiper-slide 
+                                        img(src="@img/markets-img.png", alt="" draggable="false" loading="lazy")
+                                    .markets__slide.swiper-slide 
+                                        img(src="@img/markets-img.png", alt="" draggable="false" loading="lazy")
+                                    .markets__slide.swiper-slide 
+                                        img(src="@img/markets-img.png", alt="" draggable="false" loading="lazy")
+                            .markets__buttons
+                                .markets-button-prev
+                                p.markets-button-num.markets-button-num-prev 01
+                                .markets-pagination.swiper-pagination
+                                p.markets-button-num.markets-button-num-next 08
+                                .markets-button-next
+                        .markets__info 
+                            span.markets__subtitle Заголовок к слайду
+                            p.markets__p Перед тем, как открыть торговый счет на Binance Futures, вам необходим обычный аккаунт на бирже Binance. Если у вас он отсутствует, вы можете зайти на Binance и нажать на «Регистрация» в правом верхнем углу экрана. Затем выполните следующие действия.
+                        .account 
+                            span.account__subtitle Создание аккаунта на Binance Futures
+                            .account__p Перед тем, как открыть #[a(href="#!").account__link торговый счет] на Binance Futures, вам необходим обычный аккаунт на бирже Binance. Если у вас он отсутствует, вы можете зайти на Binance и нажать на «Регистрация» в правом верхнем углу экрана. Затем выполните следующие действия:
+                            button(type="button").account__btn.btn-primary Регистрация
+                            .account__abs.disable-xxl 
+                                span.account__abs-title Словарь терминов
+                                p.account__abs-desc #[span Торговый счет] - это банковский счет, специально созданный для коммерческих целей, на котором компании могут совершать и принимать платежи.
+                            .account__accordion.accordion.enable-xxl
+                                button(type="button").accordion__button
+                                    span.account__abs-title Словарь терминов
+                                .accordion__content 
+                                    p.account__abs-desc #[span Торговый счет] - это банковский счет, специально созданный для коммерческих целей, на котором компании могут совершать и принимать платежи.
+            .blocks__col
+                .sidebar 
+                    .sidebar__body
+                        .accordion 
+                            button(type="button").accordion__button.enable-xxl
+                                span Блок 1. Введение
+                                .sidebar__btn   
+                                    span
+                            .accordion__content 
+                                .accordion__item.active
+                                    .accordion__top.disable-xxl 
+                                        p Блок 1. Введение
+                                    ul.accordion__list    
+                                        a(href="#!").accordion__p.active #[span 1.1] Блокчейн и крипторынок
+                                        a(href="#!").accordion__p.active #[span 1.2] Торговля и инвестиции
+                                        a(href="#!").accordion__p.active #[span 1.3] Фундаментальный анализ и технический анализ
+                                        a(href="#!").accordion__p #[span 1.4] Влияние на финансовые рынки
+                                        a(href="#!").accordion__p #[span 1.5] Рыночные тренды
+                                        a(href="#!").accordion__p #[span 1.6] Закрепляем
+                                .accordion__item
+                                    .accordion__top 
+                                        p Блок 2. Финансовые рынки и торговые инструменты
+                                    ul.accordion__list    
+                                        a(href="#!").accordion__p #[span 1.1] Блокчейн и крипторынок
+                                        a(href="#!").accordion__p #[span 1.2] Торговля и инвестиции
+                                        a(href="#!").accordion__p #[span 1.3] Фундаментальный анализ и технический анализ
+                                        a(href="#!").accordion__p #[span 1.4] Влияние на финансовые рынки
+                                        a(href="#!").accordion__p #[span 1.5] Рыночные тренды
+                                        a(href="#!").accordion__p #[span 1.6] Закрепляем
+                                .accordion__item
+                                    .accordion__top 
+                                        p Блок 3. Торговые и инвестиционные стратегии
+                                    ul.accordion__list    
+                                        a(href="#!").accordion__p #[span 1.1] Блокчейн и крипторынок
+                                        a(href="#!").accordion__p #[span 1.2] Торговля и инвестиции
+                                        a(href="#!").accordion__p #[span 1.3] Фундаментальный анализ и технический анализ
+                                        a(href="#!").accordion__p #[span 1.4] Влияние на финансовые рынки
+                                        a(href="#!").accordion__p #[span 1.5] Рыночные тренды
+                                        a(href="#!").accordion__p #[span 1.6] Закрепляем
+                                .accordion__item
+                                    .accordion__top 
+                                        p Блок 2. Финансовые рынки и торговые инструменты
+                                    ul.accordion__list    
+                                        a(href="#!").accordion__p #[span 1.1] Блокчейн и крипторынок
+                                        a(href="#!").accordion__p #[span 1.2] Торговля и инвестиции
+                                        a(href="#!").accordion__p #[span 1.3] Фундаментальный анализ и технический анализ
+                                        a(href="#!").accordion__p #[span 1.4] Влияние на финансовые рынки
+                                        a(href="#!").accordion__p #[span 1.5] Рыночные тренды
+                                        a(href="#!").accordion__p #[span 1.6] Закрепляем
+                                .accordion__item
+                                    .accordion__top 
+                                        p Блок 3. Торговые и инвестиционные стратегии
+                                    ul.accordion__list    
+                                        a(href="#!").accordion__p #[span 1.1] Блокчейн и крипторынок
+                                        a(href="#!").accordion__p #[span 1.2] Торговля и инвестиции
+                                        a(href="#!").accordion__p #[span 1.3] Фундаментальный анализ и технический анализ
+                                        a(href="#!").accordion__p #[span 1.4] Влияние на финансовые рынки
+                                        a(href="#!").accordion__p #[span 1.5] Рыночные тренды
+                                        a(href="#!").accordion__p #[span 1.6] Закрепляем
+                                .accordion__info.accordion__info_mb 
+                                    h2.accordion__title
+                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21 7L11 13.75L1 7L11 1L21 7ZM21 7V11M17.5 10V14.0682C17.5 15.1129 17.0913 16.116 16.3614 16.8633C14.9699 18.2878 13.1828 19 11 19C8.81719 19 7.03006 18.2878 5.63861 16.8633C4.90866 16.116 4.5 15.1129 4.5 14.0682V10" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        | Получить диплом
+                                    a(href="#!").accordion__link 1/60 уроков пройдено
+                                    a(href="#!").accordion__ask
+                                        img(src="@img/accordion-ask.svg", alt="" draggable="false" loading="lazy")  
+                                .accordion__info 
+                                    h2.accordion__title
+                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M21 7L11 13.75L1 7L11 1L21 7ZM21 7V11M17.5 10V14.0682C17.5 15.1129 17.0913 16.116 16.3614 16.8633C14.9699 18.2878 13.1828 19 11 19C8.81719 19 7.03006 18.2878 5.63861 16.8633C4.90866 16.116 4.5 15.1129 4.5 14.0682V10" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        | Получить диплом
+                                    a(href="#!").accordion__link Скачать диплом в PDF 
+                                    a(href="#!").accordion__ask
+                                        img(src="@img/accordion-ask.svg", alt="" draggable="false" loading="lazy") 

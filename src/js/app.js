@@ -3,7 +3,7 @@ import * as functions from "./modules/functions.js";
 
 functions.isWebp();
 
-import Swiper, { Navigation} from 'swiper';
+import Swiper, { Navigation, Pagination} from 'swiper';
 
 const swiper = new Swiper();
 
@@ -54,22 +54,46 @@ new Swiper(".testimonials__swiper", {
     }
 });
 
+new Swiper(".markets__swiper", {
+    slidesPerView: 1,
+    modules: [Navigation, Pagination],
+    pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+    },
+    navigation: {
+        nextEl: ".markets-button-next",
+        prevEl: ".markets-button-prev",
+    },
+});
+
 import $ from 'jquery'
 
 $(document).ready(function() {
-    $(".accordion-container > .accordion > .accordion__button").on("click", function() {
+    $(".accordion > .accordion__button").on("click", function() {
       if ($(this).hasClass("active")) {
         $(this).removeClass("active");
         $(this)
-          .siblings(".accordion-container .accordion > .accordion__content")
+          .siblings(".accordion__content")
           .slideUp(200);
       } else {
-        $(".accordion-container > .accordion > .accordion__button").removeClass("active");
+        $(".accordion > .accordion__button").removeClass("active");
         $(this).addClass("active");
-        $(".accordion-container > .accordion > .accordion__content").slideUp(200);
+        $(".accordion__content").slideUp(200);
         $(this)
-          .siblings(".accordion-container > .accordion > .accordion__content")
+          .siblings(".accordion__content")
           .slideDown(200);
       }
     });
   });
+
+const accountLink = document.querySelector('.account__link');
+const accountAbs = document.querySelector('.account__abs');
+
+accountLink.addEventListener('mouseover', (e)=>{
+    accountAbs.classList.add('active')
+})
+
+accountLink.addEventListener('mouseout', (e)=>{
+    accountAbs.classList.remove('active')
+})
