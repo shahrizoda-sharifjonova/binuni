@@ -66,6 +66,14 @@ new Swiper(".markets__swiper", {
     },
 });
 
+new Swiper(".comments__swiper", {
+    slidesPerView: 1,
+    modules: [Pagination],
+    pagination: {
+        el: ".comments-pagination",
+    },
+});
+
 import $ from 'jquery'
 
 $(document).ready(function() {
