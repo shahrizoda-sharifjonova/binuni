@@ -16,7 +16,7 @@ mixin header()
                             a(href="#!").header__link.header-toggle  О проекте
                 .header__btns
                     .container
-                        a(href="#!").header__btn.header-toggle Войти
-                        a(href="#!").header__btn.btn-primary.header-toggle Регистрация
+                        button(type='button' data-target="signin").popup-open.header__btn.header-toggle Войти
+                        button(type='button' data-target="signup").popup-open.header__btn.btn-primary.header-toggle Регистрация
             .menu.enable-mid
                 span.menu-btn

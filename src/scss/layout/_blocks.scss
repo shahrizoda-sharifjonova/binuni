@@ -1,0 +1,24 @@
+.blocks{
+    padding-top: 60px;
+    padding-bottom: 15px;
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        column-gap: 24px;
+        @include media(1400){
+            flex-direction: column-reverse;
+        }
+    }
+    &__col{
+        &:nth-of-type(1){
+            max-width: 915px;
+            @include media(1400){
+                max-width: 100%;
+            }
+        }
+        &:nth-of-type(2){
+            width: 100%;
+        }
+    }
+}
