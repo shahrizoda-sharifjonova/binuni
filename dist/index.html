@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="css/style.min.css?_v=20220502132732"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=20220502201538"/>
     <title>Document </title>
   </head>
   <body> 
@@ -786,29 +786,26 @@
             </div>
             <div class="popup" id="asks">
               <div class="popup__overlay popup-close"> </div>
-              <div class="popup__content"> 
+              <form class="popup__content" action="#" method="post"> 
                 <div class="popup__img"> <picture><source srcset="img/ask-img.webp" type="image/webp"><img src="img/ask-img.png" alt="" draggable="false" loading="lazy"/></picture></div>
                 <h2 class="popup__title">Спасибо за вопрос!</h2>
                 <p class="popup__desc">Мы ответим на него в течении 3х часов. Ответ придет на вашу почту указанную при регистрации. Если ваш вопрос покажется нам полезным - мы опубликуем его для всех пользователей. </p>
-              </div>
+              </form>
             </div>
             <div class="popup" id="ura"> 
               <div class="popup__overlay popup-close"> </div>
-              <div class="popup__content"> 
+              <form class="popup__content" action="#" method="post"> 
                 <div class="popup__img"> <picture><source srcset="img/ura.webp" type="image/webp"><img src="img/ura.png" alt="" draggable="false" loading="lazy"/></picture></div>
                 <h2 class="popup__title">Ура! <span>Теперь можно начать учиться!</span></h2><a class="popup__btn btn-primary" href="#!">Смотреть курс </a>
-              </div>
+              </form>
             </div>
             <div class="popup" id="fail"> 
               <div class="popup__overlay popup-close"> </div>
-              <div class="popup__content"> 
+              <form class="popup__content" action="#" method="post"> 
                 <div class="popup__img"> <picture><source srcset="img/fail.webp" type="image/webp"><img src="img/fail.png" alt="" draggable="false" loading="lazy"/></picture></div>
                 <h2 class="popup__title">Ой,  <span>что-то пошло не так.</span></h2>
                 <p class="popup__desc">Если это уже не первый раз напишите на почту <span>help@binuni.ru</span> </p>
-              </div>
-            </div>
-            <div class="popup" id="password"> 
-              <div class="popup__overlay popup-close"></div>
+              </form>
             </div>
             <div class="popup" id="video"> 
               <div class="popup__overlay popup-close"> </div>
@@ -816,7 +813,97 @@
                 <div class="popup__video"> <picture><source srcset="img/video.webp" type="image/webp"><img src="img/video.png" alt="" draggable="false" loading="lazy"/></picture><a class="testimonials__play" href="#!"><img src="img/testimonials-play.svg" alt="" draggable="false" loading="lazy"/></a></div>
               </div>
             </div>
+            <div class="popup" id="password"> 
+              <div class="popup__overlay popup-close"></div>
+              <form class="popup__content" action="#" method="post">
+                <form class="popup__form" action="#"> 
+                  <p class="popup__content-title">Восстановление пароля</p>
+                  <p class="popup__content-desc">Лучше новый, чем хорошо забытый старый</p>
+                  <input class="popup__content-input input" type="text" placeholder="Введите email"/>
+                  <button class="popup__content-btn btn-primary" type="submit">Восстановить</button>
+                  <div class="popup__content-link">
+                    <button class="popup-open" type="button" data-target="signin">Войти</button>  или  
+                    <button class="popup-open" type="button" data-target="signup">Зарегистрироваться</button>
+                  </div>
+                </form>
+              </form>
+            </div>
+            <div class="popup active" id="help"> 
+              <div class="popup__overlay popup-close"></div>
+              <div class="popup__wrapper"> 
+                <div class="popup__body"> 
+                  <div class="popup__info">
+                    <h2 class="popup__info-title">Личные данные</h2>
+                    <div class="popup__info-links">
+                      <button class="popup__info-btn change-content active" type="button" data-target="personals">Личные данные            </button>
+                      <button class="popup__info-btn change-content" type="button" data-target="payment">Оплата            </button>
+                      <button class="popup__info-btn change-content" type="button" data-target="helpcontent">Помощь</button>
+                    </div>
+                    <div class="popup__content-seperator"></div>
+                    <button class="popup__info-back" type="button"><img src="img/selling-arrow.svg" alt="" draggable="false" loading="lazy"/>  Назад</button>
+                  </div>
+                  <form class="popup__content dn active" action="#" method="post" id="personals">
+                    <p class="popup__content-title">Редактирование личных данных</p>
+                    <div class="popup-input">
+                      <button class="popup-input-btn" type="button"><img src="img/popup-dots.svg" alt="" draggable="false" loading="lazy"/></button>
+                      <input class="popup__content-input input" type="text" placeholder="Скайвокер"/>
+                    </div>
+                    <div class="popup-input">
+                      <button class="popup-input-btn" type="button"><img src="img/popup-dots.svg" alt="" draggable="false" loading="lazy"/></button>
+                      <div class="offer__form-input offer__form-input_tel popup__content-input"><span>+7</span>
+                        <hr/>
+                        <input class="input" type="tel" placeholder="Введите телефон" required="required"/>
+                      </div>
+                    </div>
+                    <div class="popup-input">
+                      <button class="popup-input-btn" type="button"><img src="img/popup-dots.svg" alt="" draggable="false" loading="lazy"/></button>
+                      <input class="popup__content-input input" type="text" placeholder="Введите e-mail"/>
+                    </div>
+                    <p class="popup__content-title">Управление паролем</p>
+                    <div class="popup-input">
+                      <button class="popup-input-btn" type="button"><img src="img/popup-dots.svg" alt="" draggable="false" loading="lazy"/></button>
+                      <input class="popup__content-input input" type="text" placeholder="Введите старый пароль"/>
+                    </div>
+                    <div class="popup-input">
+                      <button class="popup-input-btn" type="button"><img src="img/popup-dots.svg" alt="" draggable="false" loading="lazy"/></button>
+                      <input class="popup__content-input input" type="text" placeholder="Введите новый пароль"/>
+                    </div>
+                    <div class="popup-input">
+                      <button class="popup-input-btn" type="button"><img src="img/popup-dots.svg" alt="" draggable="false" loading="lazy"/></button>
+                      <input class="popup__content-input input" type="text" placeholder="Повторите новый пароль"/>
+                    </div>
+                    <button class="popup__content-btn btn-primary" type="submit">Сохранить</button>
+                  </form>
+                  <form class="popup__content dn" action="#" method="post" id="payment">
+                    <h2 class="popup__content-title">Купленные продукты BINUNI</h2>
+                    <div class="popup__buying"> 
+                      <div class="popup__buying-img"> <picture><source srcset="img/popup-buying.webp" type="image/webp"><img src="img/popup-buying.png" alt="" draggable="false" loading="lazy"/></picture></div>
+                      <p class="popup__buying-p">Вы еще ничего не купили</p>
+                    </div>
+                    <div class="popup__trading"> 
+                      <div class="popup__trading-top"> <span class="popup__trading-data">12.02.2022</span><span class="popup__trading-price">3 999 р.</span></div>
+                      <p class="popup__trading-p">Вы преобрели Курс торговли на Binance Future для новичков</p>
+                      <p class="popup__trading-link">Перейти к обучению</p>
+                    </div>
+                  </form>
+                  <form class="popup__content dn" action="#" method="post" id="helpcontent">
+                    <h2 class="popup__content-title">Помощь</h2>
+                    <p class="popup__content-desc">Свяжитесь с нами и мы ответим в ближайшее время</p>
+                    <div class="custom-select popup__content-select">
+                      <select>
+                        <option value="" selected="selected" disabled="disabled" hidden="hidden">Выберите категорию вопроса</option>
+                        <option value="category">category </option>
+                        <option value="category">subject</option>
+                      </select>
+                    </div>
+                    <input class="popup__content-input input" type="text" placeholder="Введите телефон"/>
+                    <textarea class="popup__content-textarea" name="textarea" placeholder="Введите сообщение"></textarea>
+                    <button class="popup__content-btn btn-primary" type="submit">Отправить</button>
+                  </form>
+                </div>
+              </div>
+            </div>
     </div>
-    <script src="js/app.min.js?_v=20220502132732"> </script>
+    <script src="js/app.min.js?_v=20220502201538"> </script>
   </body>
 </html>

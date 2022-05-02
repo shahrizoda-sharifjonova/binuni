@@ -77,37 +77,28 @@ mixin popup()
 
     .popup#asks
         .popup__overlay.popup-close 
-        .popup__content 
+        form(action="#" method="post").popup__content 
             .popup__img 
                 img(src="@img/ask-img.png", alt="" draggable="false" loading="lazy")
             h2.popup__title Спасибо за вопрос!
             p.popup__desc Мы ответим на него в течении 3х часов. Ответ придет на вашу почту указанную при регистрации. Если ваш вопрос покажется нам полезным - мы опубликуем его для всех пользователей. 
 
-
-
     .popup#ura 
         .popup__overlay.popup-close 
-        .popup__content 
+        form(action="#" method="post").popup__content 
             .popup__img 
                 img(src="@img/ura.png", alt="" draggable="false" loading="lazy")
             h2.popup__title Ура! #[span Теперь можно начать учиться!]
             a(href="#!").popup__btn.btn-primary Смотреть курс 
 
-
     .popup#fail 
         .popup__overlay.popup-close 
-        .popup__content 
+        form(action="#" method="post").popup__content 
             .popup__img 
                 img(src="@img/fail.png", alt="" draggable="false" loading="lazy")
             h2.popup__title Ой,  #[span что-то пошло не так.]
             p.popup__desc Если это уже не первый раз напишите на почту #[span help@binuni.ru] 
 
-
-
-    .popup#password 
-        .popup__overlay.popup-close
-            
-    
     .popup#video 
         .popup__overlay.popup-close 
         .popup__wrapper 
@@ -115,3 +106,81 @@ mixin popup()
                 img(src="@img/video.png", alt="" draggable="false" loading="lazy") 
                 a(href="#!").testimonials__play
                     img(src="@img/testimonials-play.svg", alt="" draggable="false" loading="lazy")
+    .popup#password 
+        .popup__overlay.popup-close
+        form(action="#" method="post").popup__content
+            form(action="#").popup__form 
+                p.popup__content-title Восстановление пароля
+                p.popup__content-desc Лучше новый, чем хорошо забытый старый
+                input(type="text" placeholder="Введите email").popup__content-input.input
+                button(type="submit").popup__content-btn.btn-primary Восстановить
+                .popup__content-link #[button(type="button" data-target="signin").popup-open Войти]  или  #[button(type="button" data-target="signup").popup-open Зарегистрироваться]
+
+    .popup.active#help 
+        .popup__overlay.popup-close
+        .popup__wrapper 
+            .popup__body  
+                .popup__info
+                    h2.popup__info-title Личные данные
+                    .popup__info-links
+                        button(type="button" data-target="personals").popup__info-btn.change-content.active Личные данные            
+                        button(type="button" data-target="payment").popup__info-btn.change-content Оплата            
+                        button(type="button" data-target="helpcontent").popup__info-btn.change-content Помощь
+                    .popup__content-seperator
+                    button(type="button").popup__info-back #[img(src="@img/selling-arrow.svg", alt="" draggable="false" loading="lazy")]  Назад
+                form(action="#" method="post").popup__content.dn.active#personals
+                    p.popup__content-title Редактирование личных данных
+                    .popup-input
+                        button(type="button").popup-input-btn
+                            img(src="@img/popup-dots.svg", alt="" draggable="false" loading="lazy")
+                        input(type="text" placeholder="Скайвокер").popup__content-input.input
+                    .popup-input
+                        button(type="button").popup-input-btn
+                            img(src="@img/popup-dots.svg", alt="" draggable="false" loading="lazy")
+                        .offer__form-input.offer__form-input_tel.popup__content-input
+                            span +7
+                            hr 
+                            input(type="tel" placeholder="Введите телефон" required).input
+                    .popup-input
+                        button(type="button").popup-input-btn
+                            img(src="@img/popup-dots.svg", alt="" draggable="false" loading="lazy")
+                        input(type="text" placeholder="Введите e-mail").popup__content-input.input
+                    p.popup__content-title Управление паролем
+                    .popup-input
+                        button(type="button").popup-input-btn
+                            img(src="@img/popup-dots.svg", alt="" draggable="false" loading="lazy")
+                        input(type="text" placeholder="Введите старый пароль").popup__content-input.input
+                    .popup-input
+                        button(type="button").popup-input-btn
+                            img(src="@img/popup-dots.svg", alt="" draggable="false" loading="lazy")
+                        input(type="text" placeholder="Введите новый пароль").popup__content-input.input
+                    .popup-input
+                        button(type="button").popup-input-btn
+                            img(src="@img/popup-dots.svg", alt="" draggable="false" loading="lazy")
+                        input(type="text" placeholder="Повторите новый пароль").popup__content-input.input
+                    button(type="submit").popup__content-btn.btn-primary Сохранить
+                form(action="#" method="post").popup__content.dn#payment
+                    h2.popup__content-title Купленные продукты BINUNI
+                    .popup__buying 
+                        .popup__buying-img 
+                            img(src="@img/popup-buying.png", alt="" draggable="false" loading="lazy")
+                        p.popup__buying-p Вы еще ничего не купили
+                    .popup__trading 
+                        .popup__trading-top 
+                            span.popup__trading-data 12.02.2022
+                            span.popup__trading-price 3 999 р.
+                        p.popup__trading-p Вы преобрели Курс торговли на Binance Future для новичков
+                        p.popup__trading-link Перейти к обучению
+                form(action="#" method="post").popup__content.dn#helpcontent
+                    h2.popup__content-title Помощь
+                    p.popup__content-desc Свяжитесь с нами и мы ответим в ближайшее время
+                    .custom-select.popup__content-select
+                        select
+                            option(value="" selected disabled hidden) Выберите категорию вопроса
+                            option(value="category") category 
+                            option(value="category") subject
+                    input(type="text" placeholder="Введите телефон").popup__content-input.input
+                    textarea(name="textarea" placeholder="Введите сообщение").popup__content-textarea
+                    button(type="submit").popup__content-btn.btn-primary Отправить
+
+
