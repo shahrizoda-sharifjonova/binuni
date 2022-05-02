@@ -45,8 +45,7 @@ mixin popup()
                     button(type="submit").popup__content-btn Создать аккаунт
                     .popup__content-link Уже есть аккаунт?  #[button(type='button' data-target="signin").popup-open Войти]
     
-    
-    .popup.active#signin 
+    .popup#signin 
         .popup__overlay.popup-close
         .popup__wrapper 
             .popup__body
