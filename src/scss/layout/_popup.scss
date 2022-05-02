@@ -411,6 +411,48 @@
             }
         }
     }
+    &#signup{
+        .popup{
+            &__body{
+                position: relative;
+            }
+            &-close{
+                position: absolute;
+                top: 15px;
+                right: 25px;
+                svg{
+                    path{
+                        fill: #000;
+                        @include media(768){
+                            fill: #fff;
+                        }
+                    }
+                }
+            }
+            &__info{
+                @include media(768){
+                    padding: 45px 15px 25px 15px;
+                }
+            }
+        }
+    }
+    &#signin{
+        .popup{
+            &__body{
+                position: relative;
+            }
+            &-close{
+                position: absolute;
+                top: 15px;
+                right: 25px;
+                svg{
+                    path{
+                        fill: #000;
+                    }
+                }
+            }
+        }
+    }
     &__overlay{
         position: absolute;
         width: 100%;

@@ -3065,6 +3065,34 @@
   height: 39px;
 }
 
+.popup#signup .popup__body {
+  position: relative;
+}
+
+.popup#signup .popup-close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+}
+
+.popup#signup .popup-close svg path {
+  fill: #000;
+}
+
+.popup#signin .popup__body {
+  position: relative;
+}
+
+.popup#signin .popup-close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+}
+
+.popup#signin .popup-close svg path {
+  fill: #000;
+}
+
 .popup__overlay {
   position: absolute;
   width: 100%;
@@ -6525,6 +6553,14 @@ img {
 
   .popup#help .popup__info-back {
     width: 250px;
+  }
+
+  .popup#signup .popup-close svg path {
+    fill: #fff;
+  }
+
+  .popup#signup .popup__info {
+    padding: 45px 15px 25px 15px;
   }
 
   .popup__body {
