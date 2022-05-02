@@ -74,3 +74,37 @@ mixin popup()
                             </svg>
                     button(type="submit").popup__content-btn Войти
                     .popup__content-link Ещё нет аккаунта? #[button(type='button' data-target="signin").popup-open Зарегистрироваться]
+
+            
+
+    .popup#asks
+        .popup__overlay.popup-close 
+        .popup__content 
+            .popup__img 
+                img(src="@img/ask-img.png", alt="" draggable="false" loading="lazy")
+            h2.popup__title Спасибо за вопрос!
+            p.popup__desc Мы ответим на него в течении 3х часов. Ответ придет на вашу почту указанную при регистрации. Если ваш вопрос покажется нам полезным - мы опубликуем его для всех пользователей. 
+
+
+
+    .popup#ura 
+        .popup__overlay.popup-close 
+        .popup__content 
+            .popup__img 
+                img(src="@img/ura.png", alt="" draggable="false" loading="lazy")
+            h2.popup__title Ура! #[span Теперь можно начать учиться!]
+            a(href="#!").popup__btn.btn-primary Смотреть курс 
+
+
+    .popup#fail 
+        .popup__overlay.popup-close 
+        .popup__content 
+            .popup__img 
+                img(src="@img/fail.png", alt="" draggable="false" loading="lazy")
+            h2.popup__title Ой,  #[span что-то пошло не так.]
+            p.popup__desc Если это уже не первый раз напишите на почту #[span help@binuni.ru] 
+
+
+
+    .popup#password 
+        .popup__overlay.popup-close

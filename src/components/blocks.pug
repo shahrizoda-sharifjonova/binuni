@@ -163,11 +163,11 @@ mixin blocks()
                             p.lessons__desc Напиши и мы поможем :)
                     form(action="").lessons__form
                         input(type="text" placeholder="Задать вопрос").lessons__input.comments__input
-                        button(type="submit").lessons__btn.comments__btn Отправить
+                        button(type="button" data-target="asks").lessons__btn.comments__btn.popup-open Отправить
                 .comments   
                     h2.comments__title Комментарии
                     form(action="").lessons__form.comments__form
-                        textarea(name="" placeholder="Написать комментарий").lessons__input.comments__input
+                        textarea(name="textarea" placeholder="Написать комментарий").lessons__input.comments__input
                         button(type="submit").lessons__btn Отправить
                     .comments__content.disable-xxl
                         .comments__item 

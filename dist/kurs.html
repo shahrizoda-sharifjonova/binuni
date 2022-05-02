@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220502111722">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220502132514">
     <title>Document</title>
   </head>
   <body> 
@@ -219,13 +219,13 @@
                         </div>
                         <form class="lessons__form" action="">
                           <input class="lessons__input comments__input" type="text" placeholder="Задать вопрос">
-                          <button class="lessons__btn comments__btn" type="submit">Отправить</button>
+                          <button class="lessons__btn comments__btn popup-open" type="button" data-target="asks">Отправить</button>
                         </form>
                       </div>
                       <div class="comments">  
                         <h2 class="comments__title">Комментарии</h2>
                         <form class="lessons__form comments__form" action="">
-                          <textarea class="lessons__input comments__input" name="" placeholder="Написать комментарий"></textarea>
+                          <textarea class="lessons__input comments__input" name="textarea" placeholder="Написать комментарий"></textarea>
                           <button class="lessons__btn" type="submit">Отправить</button>
                         </form>
                         <div class="comments__content disable-xxl">
@@ -489,8 +489,34 @@
                 </div>
               </div>
             </div>
+            <div class="popup" id="asks">
+              <div class="popup__overlay popup-close"> </div>
+              <div class="popup__content"> 
+                <div class="popup__img"> <picture><source srcset="img/ask-img.webp" type="image/webp"><img src="img/ask-img.png" alt="" draggable="false" loading="lazy"></picture></div>
+                <h2 class="popup__title">Спасибо за вопрос!</h2>
+                <p class="popup__desc">Мы ответим на него в течении 3х часов. Ответ придет на вашу почту указанную при регистрации. Если ваш вопрос покажется нам полезным - мы опубликуем его для всех пользователей. </p>
+              </div>
+            </div>
+            <div class="popup" id="ura"> 
+              <div class="popup__overlay popup-close"> </div>
+              <div class="popup__content"> 
+                <div class="popup__img"> <picture><source srcset="img/ura.webp" type="image/webp"><img src="img/ura.png" alt="" draggable="false" loading="lazy"></picture></div>
+                <h2 class="popup__title">Ура! <span>Теперь можно начать учиться!</span></h2><a class="popup__btn btn-primary" href="#!">Смотреть курс </a>
+              </div>
+            </div>
+            <div class="popup" id="fail"> 
+              <div class="popup__overlay popup-close"> </div>
+              <div class="popup__content"> 
+                <div class="popup__img"> <picture><source srcset="img/fail.webp" type="image/webp"><img src="img/fail.png" alt="" draggable="false" loading="lazy"></picture></div>
+                <h2 class="popup__title">Ой,  <span>что-то пошло не так.</span></h2>
+                <p class="popup__desc">Если это уже не первый раз напишите на почту <span>help@binuni.ru</span> </p>
+              </div>
+            </div>
+            <div class="popup" id="password"> 
+              <div class="popup__overlay popup-close"></div>
+            </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20220502111722"> </script>
-    <script src="js/app.min.js?_v=20220502111722"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20220502132514"> </script>
+    <script src="js/app.min.js?_v=20220502132514"> </script>
   </body>
 </html>
