@@ -1,3 +1,16 @@
 .comments{
     margin-bottom: 50px;
-}
+    background: #1E2026;
+    border-radius: 3px;
+    padding: 40px;
+    &__title{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+        color: #FFFFFF;
+        margin-bottom: 32px;
+    }
+    &__form{
+        margin-bottom: 32px;
+    }
+}   
