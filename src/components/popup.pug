@@ -74,3 +74,13 @@ mixin popup()
                             </svg>
                     button(type="submit").popup__content-btn Войти
                     .popup__content-link Ещё нет аккаунта? #[button(type='button' data-target="signin").popup-open Зарегистрироваться]
+
+    
+    
+    .popup#video 
+        .popup__overlay.popup-close 
+        .popup__wrapper 
+            .popup__video 
+                img(src="@img/video.png", alt="" draggable="false" loading="lazy")
+                a(href="#!").testimonials__play
+                    img(src="@img/testimonials-play.svg", alt="" draggable="false" loading="lazy")

@@ -2858,6 +2858,16 @@
   height: max-content;
 }
 
+.popup__video {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.popup__video img {
+  max-width: 100%;
+}
+
 .popup__info {
   background: #0B0E11;
   padding: 35px 50px;
@@ -3449,6 +3459,7 @@
           box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
   font-family: Rubik, sans-serif;
+  scroll-behavior: smooth;
 }
 
 *:focus,

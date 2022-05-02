@@ -4,6 +4,7 @@
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
     font-family: Rubik, sans-serif;
+    scroll-behavior: smooth;
     &:focus,
     &:active{
         outline: none;
