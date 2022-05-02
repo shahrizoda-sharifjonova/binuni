@@ -91,3 +91,53 @@ input[type="checkbox"]{
 img{
     line-height: 0;
 }
+.accordion__info{
+    width: 100%;
+    background: #1E2026;
+    border-radius: 3px;
+    padding: 29px 22px 34px 22px;
+    position: relative;
+    &_mb{
+        margin-bottom: 30px;
+    }
+    &_download{
+        border: 2px solid #0ECB81;
+    }
+}
+.accordion__ask{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+.accordion__title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    column-gap: 17px;
+    margin-bottom: 20px;
+    svg{
+        path{
+            stroke: #fff;
+        }
+    }
+    &_download{
+        svg{
+            path{
+                stroke: #FCD535 !important;
+            }
+        }
+    }
+}
+.accordion__link{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-left: 39px;
+    &_download{
+        color: #FCD535 !important;
+    }
+}

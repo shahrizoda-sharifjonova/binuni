@@ -162,20 +162,20 @@ mixin blocks()
                             h2.lessons__title Есть вопросы по уроку?
                             p.lessons__desc Напиши и мы поможем :)
                     form(action="").lessons__form
-                        input(type="text" placeholder="Задать вопрос").lessons__input
-                        button(type="submit").lessons__btn Отправить
+                        input(type="text" placeholder="Задать вопрос").lessons__input.comments__input
+                        button(type="submit").lessons__btn.comments__btn Отправить
                 .comments   
                     h2.comments__title Комментарии
                     form(action="").lessons__form.comments__form
-                        input(type="text" placeholder="Написать комментарий").lessons__input
+                        textarea(name="" placeholder="Написать комментарий").lessons__input.comments__input
                         button(type="submit").lessons__btn Отправить
-                    .comments__content
+                    .comments__content.disable-xxl
                         .comments__item 
                             .comments__img 
                                  img(src="@img/comments-1.png", alt="" draggable="false" loading="lazy")
                             .comments__info 
                                 .comments__top 
-                                    span.comments__subtitle Константинов Константин 
+                                    span.comments__subtitle Константинов Константин #[span •]
                                     span.comments__span 4 месяца назад
                                 p.comments__desc А ещё реплицированные с зарубежных источников, современные исследования и по сей день остаются уделом либералов, которые жаждут быть ассоциативно распределены по отраслям. #[br] #[br] Таким образом, разбавленное изрядной долей эмпатии, рациональное мышление требует анализа укрепления моральных ценностей.
                         .comments__item 
@@ -183,7 +183,7 @@ mixin blocks()
                                  img(src="@img/comments-1.png", alt="" draggable="false" loading="lazy")
                             .comments__info 
                                 .comments__top 
-                                    span.comments__subtitle Константинов Константин 
+                                    span.comments__subtitle Константинов Константин #[span •]
                                     span.comments__span 4 месяца назад
                                 p.comments__desc А ещё реплицированные с зарубежных источников, современные исследования и по сей день остаются уделом либералов, которые жаждут быть ассоциативно распределены по отраслям. #[br] #[br] Таким образом, разбавленное изрядной долей эмпатии, рациональное мышление требует анализа укрепления моральных ценностей.
                         .comments__item 
@@ -191,7 +191,7 @@ mixin blocks()
                                  img(src="@img/comments-2.png", alt="" draggable="false" loading="lazy")
                             .comments__info 
                                 .comments__top 
-                                    span.comments__subtitle Константинов Константин 
+                                    span.comments__subtitle Константинов Константин #[span •]
                                     span.comments__span 4 месяца назад
                                 p.comments__desc А ещё реплицированные с зарубежных источников, современные 
                         .comments__item 
@@ -199,9 +199,69 @@ mixin blocks()
                                  img(src="@img/comments-3.png", alt="" draggable="false" loading="lazy")
                             .comments__info 
                                 .comments__top 
-                                    span.comments__subtitle Константинов Константин 
+                                    span.comments__subtitle Константинов Константин #[span •]
                                     span.comments__span 4 месяца назад
-                                p.comments__desc А ещё реплицированные с зарубежных источников, современные исследования и по сей день остаются уделом либералов, которые жаждут быть ассоциативно распределены по отраслям. 
+                                p.comments__desc А ещё реплицированные с зарубежных источников, современные исследования и по сей день остаются уделом либералов, которые жаждут быть ассоциативно распределены по отраслям.
+                    .comments__slider.enable-xxl
+                        .comments__swiper.swiper 
+                            .comments__swiper-wrapper.swiper-wrapper 
+                                .comments__slide.swiper-slide 
+                                    .comments__item 
+                                        .comments__img 
+                                            img(src="@img/comments-1.png", alt="" draggable="false" loading="lazy")
+                                            .comments__top.enable-xxl 
+                                                span.comments__subtitle Константинов Константин #[span.disable-xxl •]
+                                                span.comments__span 4 месяца назад
+                                        .comments__info 
+                                            .comments__top.disable-xxl 
+                                                span.comments__subtitle Константинов Константин #[span.disable-xxl •]
+                                                span.comments__span 4 месяца назад
+                                            p.comments__desc А ещё реплицированные с зарубежных источников, современные исследования и по сей день остаются уделом либералов, которые жаждут быть ассоциативно распределены по отраслям. #[br] #[br] Таким образом, разбавленное изрядной долей эмпатии, рациональное мышление требует анализа укрепления моральных ценностей.
+                                .comments__slide.swiper-slide 
+                                    .comments__item 
+                                        .comments__img 
+                                            img(src="@img/comments-2.png", alt="" draggable="false" loading="lazy")
+                                            .comments__top.enable-xxl 
+                                                span.comments__subtitle Константинов Константин #[span.disable-xxl •]
+                                                span.comments__span 4 месяца назад
+                                        .comments__info 
+                                            .comments__top.disable-xxl 
+                                                span.comments__subtitle Константинов Константин #[span.disable-xxl •]
+                                                span.comments__span 4 месяца назад
+                                            p.comments__desc А ещё реплицированные с зарубежных источников, современные
+                                .comments__slide.swiper-slide 
+                                    .comments__item 
+                                        .comments__img 
+                                            img(src="@img/comments-3.png", alt="" draggable="false" loading="lazy")
+                                            .comments__top.enable-xxl 
+                                                span.comments__subtitle Константинов Константин #[span.disable-xxl •]
+                                                span.comments__span 4 месяца назад
+                                        .comments__info 
+                                            .comments__top.disable-xxl 
+                                                span.comments__subtitle Константинов Константин #[span •]
+                                                span.comments__span 4 месяца назад
+                                            p.comments__desc А ещё реплицированные с зарубежных источников, современные исследования и по сей день остаются уделом либералов, которые жаждут быть ассоциативно распределены по отраслям.
+                        .swiper-buttons 
+                            .swiper-pagination.comments-pagination
+                .accordion__infos.downloads
+                    .accordion__info.accordion__info_mb.enable-xxl 
+                        h2.accordion__title
+                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 7L11 13.75L1 7L11 1L21 7ZM21 7V11M17.5 10V14.0682C17.5 15.1129 17.0913 16.116 16.3614 16.8633C14.9699 18.2878 13.1828 19 11 19C8.81719 19 7.03006 18.2878 5.63861 16.8633C4.90866 16.116 4.5 15.1129 4.5 14.0682V10" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            | Получить диплом
+                        a(href="#!").accordion__link 1/60 уроков пройдено
+                        a(href="#!").accordion__ask
+                            img(src="@img/accordion-ask.svg", alt="" draggable="false" loading="lazy")  
+                    .accordion__info.enable-xxl.accordion__info_download
+                        h2.accordion__title.accordion__title_download
+                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 7L11 13.75L1 7L11 1L21 7ZM21 7V11M17.5 10V14.0682C17.5 15.1129 17.0913 16.116 16.3614 16.8633C14.9699 18.2878 13.1828 19 11 19C8.81719 19 7.03006 18.2878 5.63861 16.8633C4.90866 16.116 4.5 15.1129 4.5 14.0682V10" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            | Получить диплом
+                        a(href="#!").accordion__link.accordion__link_download Скачать диплом в PDF 
+                        a(href="#!").accordion__ask
+                            img(src="@img/accordion-ask.svg", alt="" draggable="false" loading="lazy")
             .blocks__col
                 .sidebar 
                     .sidebar__body
@@ -261,7 +321,7 @@ mixin blocks()
                                         a(href="#!").accordion__p #[span 1.4] Влияние на финансовые рынки
                                         a(href="#!").accordion__p #[span 1.5] Рыночные тренды
                                         a(href="#!").accordion__p #[span 1.6] Закрепляем
-                                .accordion__info.accordion__info_mb 
+                                .accordion__info.accordion__info_mb.disable-xxl 
                                     h2.accordion__title
                                         <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M21 7L11 13.75L1 7L11 1L21 7ZM21 7V11M17.5 10V14.0682C17.5 15.1129 17.0913 16.116 16.3614 16.8633C14.9699 18.2878 13.1828 19 11 19C8.81719 19 7.03006 18.2878 5.63861 16.8633C4.90866 16.116 4.5 15.1129 4.5 14.0682V10" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -270,12 +330,12 @@ mixin blocks()
                                     a(href="#!").accordion__link 1/60 уроков пройдено
                                     a(href="#!").accordion__ask
                                         img(src="@img/accordion-ask.svg", alt="" draggable="false" loading="lazy")  
-                                .accordion__info 
-                                    h2.accordion__title
+                                .accordion__info.disable-xxl.accordion__info_download
+                                    h2.accordion__title.accordion__title_download
                                         <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M21 7L11 13.75L1 7L11 1L21 7ZM21 7V11M17.5 10V14.0682C17.5 15.1129 17.0913 16.116 16.3614 16.8633C14.9699 18.2878 13.1828 19 11 19C8.81719 19 7.03006 18.2878 5.63861 16.8633C4.90866 16.116 4.5 15.1129 4.5 14.0682V10" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
                                         | Получить диплом
-                                    a(href="#!").accordion__link Скачать диплом в PDF 
+                                    a(href="#!").accordion__link.accordion__link_download Скачать диплом в PDF 
                                     a(href="#!").accordion__ask
                                         img(src="@img/accordion-ask.svg", alt="" draggable="false" loading="lazy") 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220502092238">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220502110137">
     <title>Document</title>
   </head>
   <body> 
@@ -21,7 +21,10 @@
                     </div>
                   </ul>
                   <div class="header__btns">
-                    <div class="container"><a class="header__btn header-toggle" href="#!">Войти</a><a class="header__btn btn-primary header-toggle" href="#!">Регистрация</a></div>
+                    <div class="container">
+                      <button class="popup-open header__btn header-toggle" type="button" data-target="signin">Войти</button>
+                      <button class="popup-open header__btn btn-primary header-toggle" type="button" data-target="signup">Регистрация</button>
+                    </div>
                   </div>
                 </div>
                 <div class="menu enable-mid"><span class="menu-btn"></span></div>
@@ -695,7 +698,49 @@
                 </div>
               </div>
             </footer>
+            <div class="popup" id="signup"> 
+              <div class="popup__overlay popup-close"></div>
+              <div class="popup__wrapper"> 
+                <div class="popup__body"> 
+                  <div class="popup__info"> 
+                    <p class="popup__info-title">Регистрация аккаунта</p>
+                    <p class="popup__info-p">Добро пожаловать <br><span>в первый онлайн университет</span> обучения торговли криптовалютой!</p>
+                    <div class="popup__info-img"><picture><source srcset="img/register.webp" type="image/webp"><img src="img/register.png" alt="" draggable="false" loading="lazy"></picture></div>
+                  </div>
+                  <form class="popup__content" action="#" method="post">
+                    <p class="popup__content-title">Введите свои данные </p>
+                    <input class="input popup__content-input" type="text" id="name" name="name" placeholder="Введите имя" required>
+                    <input class="input popup__content-input" type="email" id="email" name="email" placeholder="Введите email" required>
+                    <input class="input popup__content-input" type="password" id="password" name="password" placeholder="Введите пароль" required>
+                    <input class="input popup__content-input" type="password" id="re-password" name="re-password" placeholder="Повторите пароль" required>
+                    <div class="popup__content-chk"> 
+                      <input class="chk" type="checkbox" name="acception" id="acception" required>
+                      <label for="acception">Принимаю пользовательское соглашение и соглашаюсь на обработку персональной информации </label>
+                    </div>
+                    <div class="popup__content-seperator"> </div>
+                    <p class="popup__content-p">Регистрация через соц. сети:</p>
+                    <div class="popup__content-row"> <a class="popup__content-item" href="#!"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="48" rx="4" fill="#181A20"/>
+<path d="M35.3846 18.5919C35.4891 18.0731 35.2588 17.7823 34.7142 17.7823H31.9708C31.3426 17.7823 31.1121 18.0521 30.9237 18.4465C30.9237 18.4465 29.4697 21.7319 27.6648 23.7058C27.0855 24.344 26.9838 24.5359 26.6639 24.5359C26.4059 24.5359 26.287 24.3228 26.287 23.7471V18.7034C26.287 17.9977 26.2042 17.7823 25.6168 17.7823H21.25C20.9131 17.7823 20.6881 17.9642 20.6881 18.2277C20.6881 18.8923 21.7142 19.0423 21.7142 20.8431V24.5584C21.7142 25.3057 21.6723 25.5962 21.3163 25.5962C20.3739 25.5962 17.9267 22.3982 16.6702 18.7449C16.4187 17.9977 16.1478 17.7823 15.4334 17.7823H12.697C12.2991 17.7823 12 18.0598 12 18.4542C12 19.1807 12.8585 22.5434 16.2304 27.0475C18.492 30.0779 21.6587 31.7178 24.3392 31.7178C25.9729 31.7178 26.287 31.4367 26.287 30.7515V28.4269C26.287 27.8457 26.5173 27.5965 26.8523 27.5965C27.2293 27.5965 27.7857 27.728 29.3403 29.2477C31.1831 30.9913 31.3088 31.7178 32.3143 31.7178H35.3925C35.7068 31.7178 36 31.5724 36 31.0536C36 30.3684 35.0994 29.1439 33.7172 27.6909C33.1518 26.9436 32.2302 26.1343 31.9371 25.7607C31.5182 25.3247 31.6439 25.0755 31.9371 24.619C31.9371 24.619 35.0702 20.0448 35.3846 18.5919Z" fill="white"/>
+</svg></a><a class="popup__content-item" href="#!"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="48" rx="4" fill="#181A20"/>
+<path d="M34.7654 24.2475C34.7654 23.5234 34.7012 22.8359 34.5912 22.1667H24.2329V26.3009H30.1637C29.8979 27.6575 29.1187 28.8034 27.9637 29.5825V32.3325H31.5021C33.5737 30.4167 34.7654 27.5934 34.7654 24.2475Z" fill="white"/>
+<path d="M24.2345 35.0001C27.2045 35.0001 29.6887 34.0101 31.5037 32.3326L27.9653 29.5826C26.9753 30.2426 25.7195 30.6459 24.2345 30.6459C21.3653 30.6459 18.9362 28.7117 18.0653 26.0992H14.417V28.9317C16.2228 32.5251 19.9353 35.0001 24.2345 35.0001Z" fill="white"/>
+<path d="M18.0637 26.0992C17.8346 25.4392 17.7154 24.7334 17.7154 24C17.7154 23.2667 17.8437 22.5609 18.0637 21.9009V19.0684H14.4154C13.6637 20.5534 13.2329 22.2217 13.2329 24C13.2329 25.7784 13.6637 27.4467 14.4154 28.9317L18.0637 26.0992Z" fill="white"/>
+<path d="M24.2345 17.3542C25.857 17.3542 27.3053 17.9133 28.4512 19.0042L31.5862 15.8692C29.6887 14.0908 27.2045 13 24.2345 13C19.9353 13 16.2228 15.475 14.417 19.0683L18.0653 21.9008C18.9362 19.2883 21.3653 17.3542 24.2345 17.3542Z" fill="white"/>
+</svg> </a><a class="popup__content-item" href="#!"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="48" rx="4" fill="#181A20"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.3381 23.9999C35.3381 30.2617 30.2619 35.3379 24.0001 35.3379C17.7383 35.3379 12.6621 30.2617 12.6621 23.9999C12.6621 17.7381 17.7383 12.6619 24.0001 12.6619C30.2619 12.6619 35.3381 17.7381 35.3381 23.9999ZM25.7799 31.0863H25.7792H25.7692V18.8285H24.6638C22.641 18.8285 21.577 19.8482 21.577 21.3569C21.577 23.0739 22.3175 23.8647 23.8297 24.8844L25.0812 25.7171L21.4828 31.0863H18.8027L22.0354 26.293C20.1755 24.9738 19.1365 23.6732 19.1365 21.5025C19.1365 18.7662 21.0345 16.9138 24.6531 16.9138H28.2512V31.0863H25.7799Z" fill="white"/>
+</svg></a></div>
+                    <button class="popup__content-btn" type="submit">Создать аккаунт</button>
+                    <div class="popup__content-link">Уже есть аккаунт?  
+                      <button class="popup-open" type="button" data-target="signin">Войти</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
     </div>
-    <script src="js/app.min.js?_v=20220502092238"> </script>
+    <script src="js/app.min.js?_v=20220502110137"> </script>
   </body>
 </html>

@@ -141,37 +141,6 @@
                 text-decoration: none;
             }
         }
-        &__info{
-            width: 100%;
-            background: #1E2026;
-            border-radius: 3px;
-            padding: 29px 22px 34px 22px;
-            &_mb{
-                margin-bottom: 30px;
-            }
-        }
-        &__title{
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 21px;
-            color: #FFFFFF;
-            display: flex;
-            align-items: center;
-            column-gap: 17px;
-            margin-bottom: 20px;
-            svg{
-                path{
-                    stroke: #fff;
-                }
-            }
-        }
-        &__link{
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 19px;
-            color: #FFFFFF;
-            margin-left: 39px;
-        }
     }
 }
 

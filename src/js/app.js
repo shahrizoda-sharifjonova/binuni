@@ -1,6 +1,5 @@
 import * as functions from "./modules/functions.js";
 
-
 functions.isWebp();
 
 import Swiper, { Navigation, Pagination} from 'swiper';
@@ -67,6 +66,14 @@ new Swiper(".markets__swiper", {
     },
 });
 
+new Swiper(".comments__swiper", {
+    slidesPerView: 1,
+    modules: [Pagination],
+    pagination: {
+        el: ".comments-pagination",
+    },
+});
+
 import $ from 'jquery'
 
 $(document).ready(function() {
@@ -85,15 +92,42 @@ $(document).ready(function() {
           .slideDown(200);
       }
     });
-  });
+});
 
-const accountLink = document.querySelector('.account__link');
-const accountAbs = document.querySelector('.account__abs');
 
-accountLink.addEventListener('mouseover', (e)=>{
-    accountAbs.classList.add('active')
+if(document.querySelector('.account__link')){
+    const accountLink = document.querySelector('.account__link');
+    const accountAbs = document.querySelector('.account__abs');
+    
+    accountLink.addEventListener('mouseover', (e)=>{
+        accountAbs.classList.add('active')
+    })
+    
+    accountLink.addEventListener('mouseout', (e)=>{
+        accountAbs.classList.remove('active')
+    })
+}
+
+const popup = document.querySelectorAll('.popup');
+const popupOpen = document.querySelectorAll('.popup-open');
+const popupClose = document.querySelectorAll('.popup-close');
+popupClose.forEach(close => {
+    close.addEventListener('click', e => {
+        popup.forEach(el => {
+            el.classList.remove('active');
+            document.body.style.overflowY = "auto";
+        })
+    })
 })
-
-accountLink.addEventListener('mouseout', (e)=>{
-    accountAbs.classList.remove('active')
+popupOpen.forEach(open => {
+    open.addEventListener('click', e => {
+        popup.forEach(el => {
+            el.classList.remove('active');
+            document.body.style.overflowY = "auto";
+        })
+        const target = open.getAttribute('data-target');
+        const elem = document.querySelector(`#${target}`);
+        elem.classList.add('active');
+        document.body.style.overflowY = "hidden";
+    })
 })
