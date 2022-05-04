@@ -3077,6 +3077,15 @@
   position: absolute;
   top: 15px;
   right: 25px;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.popup#signup .popup-close:hover {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .popup#signup .popup-close svg path {

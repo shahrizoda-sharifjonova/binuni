@@ -425,6 +425,10 @@
                 position: absolute;
                 top: 15px;
                 right: 25px;
+                transition: 300ms ease-out;
+                &:hover{
+                    transform: rotate(-180deg);
+                }
                 svg{
                     path{
                         fill: #000;
