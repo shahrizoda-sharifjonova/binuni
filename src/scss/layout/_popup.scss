@@ -123,7 +123,7 @@
             }
         }
     }
-    &#password{
+    &#password-popup{
         .popup__content{
             padding: 40px 25px 45px 25px;
             @include media(1400){
@@ -564,6 +564,13 @@
             &.active{
                 display: flex;
             }
+        }
+        &-desc{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 125%;
+            margin-bottom: 18px;
+            color: #909090;
         }
         @include media(1200){
             padding: 25px 30px;

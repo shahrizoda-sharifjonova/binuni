@@ -2870,15 +2870,15 @@
   color: #F0B90B;
 }
 
-.popup#password .popup__content {
+.popup#password-popup .popup__content {
   padding: 40px 25px 45px 25px;
 }
 
-.popup#password .popup__content-title {
+.popup#password-popup .popup__content-title {
   margin-bottom: 15px;
 }
 
-.popup#password .popup__content-desc {
+.popup#password-popup .popup__content-desc {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 400;
@@ -2888,29 +2888,29 @@
   margin-bottom: 18px;
 }
 
-.popup#password .popup__content-input {
+.popup#password-popup .popup__content-input {
   color: #000000;
   width: 100%;
   margin-bottom: 30px;
 }
 
-.popup#password .popup__content-input::-webkit-input-placeholder {
+.popup#password-popup .popup__content-input::-webkit-input-placeholder {
   color: #000000;
 }
 
-.popup#password .popup__content-input::-moz-placeholder {
+.popup#password-popup .popup__content-input::-moz-placeholder {
   color: #000000;
 }
 
-.popup#password .popup__content-input:-ms-input-placeholder {
+.popup#password-popup .popup__content-input:-ms-input-placeholder {
   color: #000000;
 }
 
-.popup#password .popup__content-input::-ms-input-placeholder {
+.popup#password-popup .popup__content-input::-ms-input-placeholder {
   color: #000000;
 }
 
-.popup#password .popup__content-input::placeholder {
+.popup#password-popup .popup__content-input::placeholder {
   color: #000000;
 }
 
@@ -3223,6 +3223,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.popup__content-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125%;
+  margin-bottom: 18px;
+  color: #909090;
 }
 
 .popup__content#personals .popup__content-title {
@@ -4861,13 +4869,13 @@ img {
     width: max-content;
   }
 
-  .popup#password .popup__content {
+  .popup#password-popup .popup__content {
     max-width: 685px;
     width: 100%;
     padding: 28px 33px 33px 28px;
   }
 
-  .popup#password .popup__content-title {
+  .popup#password-popup .popup__content-title {
     margin-bottom: 18px;
   }
 
@@ -5956,11 +5964,11 @@ img {
     margin-bottom: 30px;
   }
 
-  .popup#password .popup__content {
+  .popup#password-popup .popup__content {
     padding: 0 16px 25px 16px;
   }
 
-  .popup#password .popup__content-title {
+  .popup#password-popup .popup__content-title {
     background: #0B0E11;
     border-radius: 4px;
     font-weight: 500;
@@ -5973,13 +5981,13 @@ img {
     width: calc(100% + 33px);
   }
 
-  .popup#password .popup__content-desc {
+  .popup#password-popup .popup__content-desc {
     font-size: 18px;
     line-height: 125%;
     margin-bottom: 31px;
   }
 
-  .popup#password .popup__content-input {
+  .popup#password-popup .popup__content-input {
     margin-bottom: 32px;
   }
 
@@ -6520,11 +6528,11 @@ img {
     width: 100%;
   }
 
-  .popup#password .popup__content {
+  .popup#password-popup .popup__content {
     padding: 22px 17px 21px 16px;
   }
 
-  .popup#password .popup__content-title {
+  .popup#password-popup .popup__content-title {
     font-weight: 500;
     font-size: 24px;
     line-height: 125%;
@@ -6536,11 +6544,11 @@ img {
     margin-bottom: 16px;
   }
 
-  .popup#password .popup__content-desc {
+  .popup#password-popup .popup__content-desc {
     margin-bottom: 24px;
   }
 
-  .popup#password .popup__content-input {
+  .popup#password-popup .popup__content-input {
     margin-bottom: 24px;
   }
 
@@ -7312,32 +7320,32 @@ img {
     margin-bottom: 15px;
   }
 
-  .popup#password .popup__content {
+  .popup#password-popup .popup__content {
     padding: 18px 17px 32px 17px;
   }
 
-  .popup#password .popup__content-title {
+  .popup#password-popup .popup__content-title {
     font-size: 18px;
     line-height: 125%;
     margin-bottom: 12px;
   }
 
-  .popup#password .popup__content-desc {
+  .popup#password-popup .popup__content-desc {
     font-size: 14px;
     line-height: 125%;
     margin-bottom: 20px;
   }
 
-  .popup#password .popup__content-input {
+  .popup#password-popup .popup__content-input {
     margin-bottom: 28px;
   }
 
-  .popup#password .popup__content-link {
+  .popup#password-popup .popup__content-link {
     display: block;
     font-size: 14px;
   }
 
-  .popup#password .popup__content-link .popup-open {
+  .popup#password-popup .popup__content-link .popup-open {
     font-size: 14px;
   }
 
