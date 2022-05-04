@@ -2785,6 +2785,10 @@
   visibility: visible;
 }
 
+.popup__video img {
+  max-width: 100%;
+}
+
 .popup#asks .popup__content {
   padding: 60px 96px 42px 96px;
   display: -webkit-box;

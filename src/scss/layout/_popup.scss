@@ -17,6 +17,11 @@
         opacity: 1;
         visibility: visible;
     }
+    &__video{
+        img{
+            max-width: 100%;
+        }
+    }
     &#asks{
         .popup__content{
             padding: 60px 96px 42px 96px;

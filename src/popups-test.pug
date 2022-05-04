@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.min.css")
+        title Document
+        style. 
+            .popup-test-btn{
+                width: 200px;
+                height: 30px;
+                margin: 10px;
+            }
+    body 
+        .wrapper 
+            include components/header 
+            +header
+            .main 
+                .container
+                    button(type='button' data-target="help").popup-test-btn.btn-primary.popup-open popup test
+            include components/footer 
+            +footer
+            include components/popup 
+            +popup
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js") 
+        script(src="js/app.min.js") 

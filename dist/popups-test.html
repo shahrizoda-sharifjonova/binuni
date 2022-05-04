@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220504125548">
+    <title>Document</title>
+    <style>
+      .popup-test-btn{
+          width: 200px;
+          height: 30px;
+          margin: 10px;
+      }
+    </style>
+  </head>
+  <body> 
+    <div class="wrapper"> 
+            <header class="header">
+              <nav class="header__nav container"><a class="header__logo" href="index.html"><img src="img/header-logo.svg" alt="" draggable="false" loading="lazy"></a>
+                <div class="header__content">
+                  <ul class="header__list">
+                    <div class="container">
+                      <li class="header__li"><a class="header__link header-toggle" href="#!"> Курсы</a></li>
+                      <li class="header__li"><a class="header__link header-toggle" href="#!"> Карта интерфейса Binance</a></li>
+                      <li class="header__li"><a class="header__link header-toggle" href="#!"> Wiki</a></li>
+                      <li class="header__li"><a class="header__link header-toggle" href="#!"> О проекте</a></li>
+                    </div>
+                  </ul>
+                  <div class="header__btns">
+                    <div class="container">
+                      <button class="popup-open header__btn header-toggle" type="button" data-target="signin">Войти</button>
+                      <button class="popup-open header__btn btn-primary header-toggle" type="button" data-target="signup">Регистрация</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu enable-mid"><span class="menu-btn"></span></div>
+              </nav>
+            </header>
+      <div class="main"> 
+        <div class="container">
+          <button class="popup-test-btn btn-primary popup-open" type="button" data-target="help">popup test</button>
+        </div>
+      </div>
+            <footer class="footer">
+              <div class="footer__body container"> 
+                <div class="footer__top"> <a class="footer__logo" href="index.html"><img src="img/footer-logo.svg" alt="" draggable="false" loading="lazy"></a>
+                  <div class="footer__lists">
+                    <ul class="footer__list"> 
+                      <li class="footer__li"> <a class="footer__link" href="#!">Оплата</a></li>
+                      <li class="footer__li"> <a class="footer__link" href="#!">Возврат</a></li>
+                      <li class="footer__li"> <a class="footer__link" href="#!">О платформе</a></li>
+                    </ul>
+                    <ul class="footer__list enable-xl"> 
+                      <li class="footer__li"> <a class="footer__p" href="#!">Договор оферты</a></li>
+                      <li class="footer__li"> <a class="footer__p" href="#!">Пользовательское соглашение</a></li>
+                      <li class="footer__li"> <a class="footer__p" href="#!">Обработка перснональных данных</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer__images">
+                    <div class="footer__img disable-lg"><picture><source srcset="img/footer-1.webp" type="image/webp"><img src="img/footer-1.png" alt="" draggable="false" loading="lazy"></picture></div>
+                    <div class="footer__img disable-lg"><picture><source srcset="img/footer-2.webp" type="image/webp"><img src="img/footer-2.png" alt="" draggable="false" loading="lazy"></picture></div>
+                    <div class="footer__img disable-lg"><picture><source srcset="img/footer-3.webp" type="image/webp"><img src="img/footer-3.png" alt="" draggable="false" loading="lazy"></picture></div>
+                    <div class="footer__img disable-lg"><picture><source srcset="img/footer-4.webp" type="image/webp"><img src="img/footer-4.png" alt="" draggable="false" loading="lazy"></picture></div>
+                    <div class="footer__img disable-lg"><picture><source srcset="img/footer-5.webp" type="image/webp"><img src="img/footer-5.png" alt="" draggable="false" loading="lazy"></picture></div>
+                    <div class="footer__img enable-lg"> <picture><source srcset="img/footer-1_lg.webp" type="image/webp"><img src="img/footer-1_lg.png" alt="" draggable="false" loading="lazy"></picture></div>
+                    <div class="footer__img enable-lg"> <picture><source srcset="img/footer-2_lg.webp" type="image/webp"><img src="img/footer-2_lg.png" alt="" draggable="false" loading="lazy"></picture></div>
+                    <div class="footer__img enable-lg"> <picture><source srcset="img/footer-3_lg.webp" type="image/webp"><img src="img/footer-3_lg.png" alt="" draggable="false" loading="lazy"></picture></div>
+                    <div class="footer__img enable-lg"> <picture><source srcset="img/footer-4_lg.webp" type="image/webp"><img src="img/footer-4_lg.png" alt="" draggable="false" loading="lazy"></picture></div>
+                    <div class="footer__img enable-lg"> <picture><source srcset="img/footer-5_lg.webp" type="image/webp"><img src="img/footer-5_lg.png" alt="" draggable="false" loading="lazy"></picture></div>
+                  </div>
+                </div>
+                <div class="footer__info"> 
+                  <p class="footer__p">© 2022 «BINUNI»</p>
+                  <p class="footer__p disable-xl">Договор оферты</p>
+                  <p class="footer__p disable-xl">Пользовательское соглашение</p>
+                  <p class="footer__p disable-xl">Обработка перснональных данных</p>
+                  <p class="footer__p">Developed by vysota</p>
+                </div>
+              </div>
+            </footer>
+            <div class="popup" id="signup"> 
+              <div class="popup__overlay popup-close"></div>
+              <div class="popup__wrapper"> 
+                <div class="popup__body"> 
+                  <div class="popup-close">
+                     <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.913698C0.683417 0.522257 1.31658 0.522257 1.70711 0.913698L9 8.22372L16.2929 0.913698C16.6834 0.522257 17.3166 0.522257 17.7071 0.913698C18.0976 1.30514 18.0976 1.93979 17.7071 2.33123L10.4142 9.64125L17.7071 16.9513C18.0976 17.3427 18.0976 17.9774 17.7071 18.3688C17.3166 18.7602 16.6834 18.7602 16.2929 18.3688L9 11.0588L1.70711 18.3688C1.31658 18.7602 0.683417 18.7602 0.292893 18.3688C-0.0976311 17.9774 -0.0976311 17.3427 0.292893 16.9513L7.58579 9.64125L0.292893 2.33123C-0.0976311 1.93979 -0.0976311 1.30514 0.292893 0.913698Z" fill=""/>
+</svg> 
+                  </div>
+                  <div class="popup__info"> 
+                    <p class="popup__info-title">Регистрация аккаунта</p>
+                    <p class="popup__info-p">Добро пожаловать <br><span>в первый онлайн университет</span> обучения торговли криптовалютой!</p>
+                    <div class="popup__info-img"><picture><source srcset="img/register.webp" type="image/webp"><img src="img/register.png" alt="" draggable="false" loading="lazy"></picture></div>
+                  </div>
+                  <form class="popup__content" action="#" method="post">
+                    <p class="popup__content-title">Введите свои данные </p>
+                    <input class="input popup__content-input" type="text" id="name" name="name" placeholder="Введите имя" required>
+                    <input class="input popup__content-input" type="email" id="email" name="email" placeholder="Введите email" required>
+                    <input class="input popup__content-input" type="password" id="password" name="password" placeholder="Введите пароль" required>
+                    <input class="input popup__content-input" type="password" id="re-password" name="re-password" placeholder="Повторите пароль" required>
+                    <div class="popup__content-chk"> 
+                      <input class="chk" type="checkbox" name="acception" id="acception" required>
+                      <label for="acception">Принимаю пользовательское соглашение и соглашаюсь на обработку персональной информации </label>
+                    </div>
+                    <div class="popup__content-seperator"> </div>
+                    <p class="popup__content-p">Регистрация через соц. сети:</p>
+                    <div class="popup__content-row"> <a class="popup__content-item" href="#!"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="48" rx="4" fill="#181A20"/>
+<path d="M35.3846 18.5919C35.4891 18.0731 35.2588 17.7823 34.7142 17.7823H31.9708C31.3426 17.7823 31.1121 18.0521 30.9237 18.4465C30.9237 18.4465 29.4697 21.7319 27.6648 23.7058C27.0855 24.344 26.9838 24.5359 26.6639 24.5359C26.4059 24.5359 26.287 24.3228 26.287 23.7471V18.7034C26.287 17.9977 26.2042 17.7823 25.6168 17.7823H21.25C20.9131 17.7823 20.6881 17.9642 20.6881 18.2277C20.6881 18.8923 21.7142 19.0423 21.7142 20.8431V24.5584C21.7142 25.3057 21.6723 25.5962 21.3163 25.5962C20.3739 25.5962 17.9267 22.3982 16.6702 18.7449C16.4187 17.9977 16.1478 17.7823 15.4334 17.7823H12.697C12.2991 17.7823 12 18.0598 12 18.4542C12 19.1807 12.8585 22.5434 16.2304 27.0475C18.492 30.0779 21.6587 31.7178 24.3392 31.7178C25.9729 31.7178 26.287 31.4367 26.287 30.7515V28.4269C26.287 27.8457 26.5173 27.5965 26.8523 27.5965C27.2293 27.5965 27.7857 27.728 29.3403 29.2477C31.1831 30.9913 31.3088 31.7178 32.3143 31.7178H35.3925C35.7068 31.7178 36 31.5724 36 31.0536C36 30.3684 35.0994 29.1439 33.7172 27.6909C33.1518 26.9436 32.2302 26.1343 31.9371 25.7607C31.5182 25.3247 31.6439 25.0755 31.9371 24.619C31.9371 24.619 35.0702 20.0448 35.3846 18.5919Z" fill="white"/>
+</svg></a><a class="popup__content-item" href="#!"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="48" rx="4" fill="#181A20"/>
+<path d="M34.7654 24.2475C34.7654 23.5234 34.7012 22.8359 34.5912 22.1667H24.2329V26.3009H30.1637C29.8979 27.6575 29.1187 28.8034 27.9637 29.5825V32.3325H31.5021C33.5737 30.4167 34.7654 27.5934 34.7654 24.2475Z" fill="white"/>
+<path d="M24.2345 35.0001C27.2045 35.0001 29.6887 34.0101 31.5037 32.3326L27.9653 29.5826C26.9753 30.2426 25.7195 30.6459 24.2345 30.6459C21.3653 30.6459 18.9362 28.7117 18.0653 26.0992H14.417V28.9317C16.2228 32.5251 19.9353 35.0001 24.2345 35.0001Z" fill="white"/>
+<path d="M18.0637 26.0992C17.8346 25.4392 17.7154 24.7334 17.7154 24C17.7154 23.2667 17.8437 22.5609 18.0637 21.9009V19.0684H14.4154C13.6637 20.5534 13.2329 22.2217 13.2329 24C13.2329 25.7784 13.6637 27.4467 14.4154 28.9317L18.0637 26.0992Z" fill="white"/>
+<path d="M24.2345 17.3542C25.857 17.3542 27.3053 17.9133 28.4512 19.0042L31.5862 15.8692C29.6887 14.0908 27.2045 13 24.2345 13C19.9353 13 16.2228 15.475 14.417 19.0683L18.0653 21.9008C18.9362 19.2883 21.3653 17.3542 24.2345 17.3542Z" fill="white"/>
+</svg> </a><a class="popup__content-item" href="#!"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="48" rx="4" fill="#181A20"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.3381 23.9999C35.3381 30.2617 30.2619 35.3379 24.0001 35.3379C17.7383 35.3379 12.6621 30.2617 12.6621 23.9999C12.6621 17.7381 17.7383 12.6619 24.0001 12.6619C30.2619 12.6619 35.3381 17.7381 35.3381 23.9999ZM25.7799 31.0863H25.7792H25.7692V18.8285H24.6638C22.641 18.8285 21.577 19.8482 21.577 21.3569C21.577 23.0739 22.3175 23.8647 23.8297 24.8844L25.0812 25.7171L21.4828 31.0863H18.8027L22.0354 26.293C20.1755 24.9738 19.1365 23.6732 19.1365 21.5025C19.1365 18.7662 21.0345 16.9138 24.6531 16.9138H28.2512V31.0863H25.7799Z" fill="white"/>
+</svg></a></div>
+                    <button class="popup__content-btn" type="submit">Создать аккаунт</button>
+                    <div class="popup__content-link">Уже есть аккаунт?  
+                      <button class="popup-open" type="button" data-target="signin">Войти</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="popup" id="signin"> 
+              <div class="popup__overlay popup-close"></div>
+              <div class="popup__wrapper"> 
+                <div class="popup__body">
+                  <div class="popup-close">
+                     <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.913698C0.683417 0.522257 1.31658 0.522257 1.70711 0.913698L9 8.22372L16.2929 0.913698C16.6834 0.522257 17.3166 0.522257 17.7071 0.913698C18.0976 1.30514 18.0976 1.93979 17.7071 2.33123L10.4142 9.64125L17.7071 16.9513C18.0976 17.3427 18.0976 17.9774 17.7071 18.3688C17.3166 18.7602 16.6834 18.7602 16.2929 18.3688L9 11.0588L1.70711 18.3688C1.31658 18.7602 0.683417 18.7602 0.292893 18.3688C-0.0976311 17.9774 -0.0976311 17.3427 0.292893 16.9513L7.58579 9.64125L0.292893 2.33123C-0.0976311 1.93979 -0.0976311 1.30514 0.292893 0.913698Z" fill=""/>
+</svg>  
+                  </div>
+                  <form class="popup__content" action="#" method="post">
+                    <p class="popup__content-title">Вход в аккаунт</p>
+                    <input class="input popup__content-input" type="email" id="logemail" name="email" placeholder="Введите email" required>
+                    <input class="input popup__content-input" type="password" id="logpassword" name="password" placeholder="Введите пароль" required><a class="popup__content-a" href="#!">Забыли пароль?</a>
+                    <div class="popup__content-seperator"> </div>
+                    <p class="popup__content-p">Вход через соц. сети:</p>
+                    <div class="popup__content-row"> <a class="popup__content-item" href="#!"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+<rect width="48" height="48" rx="4" fill="#181A20"/> 
+<path d="M35.3846 18.5919C35.4891 18.0731 35.2588 17.7823 34.7142 17.7823H31.9708C31.3426 17.7823 31.1121 18.0521 30.9237 18.4465C30.9237 18.4465 29.4697 21.7319 27.6648 23.7058C27.0855 24.344 26.9838 24.5359 26.6639 24.5359C26.4059 24.5359 26.287 24.3228 26.287 23.7471V18.7034C26.287 17.9977 26.2042 17.7823 25.6168 17.7823H21.25C20.9131 17.7823 20.6881 17.9642 20.6881 18.2277C20.6881 18.8923 21.7142 19.0423 21.7142 20.8431V24.5584C21.7142 25.3057 21.6723 25.5962 21.3163 25.5962C20.3739 25.5962 17.9267 22.3982 16.6702 18.7449C16.4187 17.9977 16.1478 17.7823 15.4334 17.7823H12.697C12.2991 17.7823 12 18.0598 12 18.4542C12 19.1807 12.8585 22.5434 16.2304 27.0475C18.492 30.0779 21.6587 31.7178 24.3392 31.7178C25.9729 31.7178 26.287 31.4367 26.287 30.7515V28.4269C26.287 27.8457 26.5173 27.5965 26.8523 27.5965C27.2293 27.5965 27.7857 27.728 29.3403 29.2477C31.1831 30.9913 31.3088 31.7178 32.3143 31.7178H35.3925C35.7068 31.7178 36 31.5724 36 31.0536C36 30.3684 35.0994 29.1439 33.7172 27.6909C33.1518 26.9436 32.2302 26.1343 31.9371 25.7607C31.5182 25.3247 31.6439 25.0755 31.9371 24.619C31.9371 24.619 35.0702 20.0448 35.3846 18.5919Z" fill="white"/>
+</svg> </a><a class="popup__content-item" href="#!">
+                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="48" rx="4" fill="#181A20"/>
+<path d="M34.7654 24.2475C34.7654 23.5234 34.7012 22.8359 34.5912 22.1667H24.2329V26.3009H30.1637C29.8979 27.6575 29.1187 28.8034 27.9637 29.5825V32.3325H31.5021C33.5737 30.4167 34.7654 27.5934 34.7654 24.2475Z" fill="white"/>
+<path d="M24.2345 35.0001C27.2045 35.0001 29.6887 34.0101 31.5037 32.3326L27.9653 29.5826C26.9753 30.2426 25.7195 30.6459 24.2345 30.6459C21.3653 30.6459 18.9362 28.7117 18.0653 26.0992H14.417V28.9317C16.2228 32.5251 19.9353 35.0001 24.2345 35.0001Z" fill="white"/>
+<path d="M18.0637 26.0992C17.8346 25.4392 17.7154 24.7334 17.7154 24C17.7154 23.2667 17.8437 22.5609 18.0637 21.9009V19.0684H14.4154C13.6637 20.5534 13.2329 22.2217 13.2329 24C13.2329 25.7784 13.6637 27.4467 14.4154 28.9317L18.0637 26.0992Z" fill="white"/>
+<path d="M24.2345 17.3542C25.857 17.3542 27.3053 17.9133 28.4512 19.0042L31.5862 15.8692C29.6887 14.0908 27.2045 13 24.2345 13C19.9353 13 16.2228 15.475 14.417 19.0683L18.0653 21.9008C18.9362 19.2883 21.3653 17.3542 24.2345 17.3542Z" fill="white"/>
+</svg> </a><a class="popup__content-item" href="#!"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="48" rx="4" fill="#181A20"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.3381 23.9999C35.3381 30.2617 30.2619 35.3379 24.0001 35.3379C17.7383 35.3379 12.6621 30.2617 12.6621 23.9999C12.6621 17.7381 17.7383 12.6619 24.0001 12.6619C30.2619 12.6619 35.3381 17.7381 35.3381 23.9999ZM25.7799 31.0863H25.7792H25.7692V18.8285H24.6638C22.641 18.8285 21.577 19.8482 21.577 21.3569C21.577 23.0739 22.3175 23.8647 23.8297 24.8844L25.0812 25.7171L21.4828 31.0863H18.8027L22.0354 26.293C20.1755 24.9738 19.1365 23.6732 19.1365 21.5025C19.1365 18.7662 21.0345 16.9138 24.6531 16.9138H28.2512V31.0863H25.7799Z" fill="white"/>
+</svg></a></div>
+                    <button class="popup__content-btn" type="submit">Войти</button>
+                    <div class="popup__content-link">Ещё нет аккаунта? 
+                      <button class="popup-open" type="button" data-target="signin">Зарегистрироваться</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="popup" id="asks">
+              <div class="popup__overlay popup-close"> </div>
+              <form class="popup__content" action="#" method="post"> 
+                <div class="popup__img"> <picture><source srcset="img/ask-img.webp" type="image/webp"><img src="img/ask-img.png" alt="" draggable="false" loading="lazy"></picture></div>
+                <h2 class="popup__title">Спасибо за вопрос!</h2>
+                <p class="popup__desc">Мы ответим на него в течении 3х часов. Ответ придет на вашу почту указанную при регистрации. Если ваш вопрос покажется нам полезным - мы опубликуем его для всех пользователей. </p>
+              </form>
+            </div>
+            <div class="popup" id="ura"> 
+              <div class="popup__overlay popup-close"> </div>
+              <form class="popup__content" action="#" method="post"> 
+                <div class="popup__img"> <picture><source srcset="img/ura.webp" type="image/webp"><img src="img/ura.png" alt="" draggable="false" loading="lazy"></picture></div>
+                <h2 class="popup__title">Ура! <span>Теперь можно начать учиться!</span></h2><a class="popup__btn btn-primary" href="#!">Смотреть курс </a>
+              </form>
+            </div>
+            <div class="popup" id="fail"> 
+              <div class="popup__overlay popup-close"> </div>
+              <form class="popup__content" action="#" method="post"> 
+                <div class="popup__img"> <picture><source srcset="img/fail.webp" type="image/webp"><img src="img/fail.png" alt="" draggable="false" loading="lazy"></picture></div>
+                <h2 class="popup__title">Ой,  <span>что-то пошло не так.</span></h2>
+                <p class="popup__desc">Если это уже не первый раз напишите на почту <span>help@binuni.ru</span> </p>
+              </form>
+            </div>
+            <div class="popup" id="video"> 
+              <div class="popup__overlay popup-close"> </div>
+              <div class="popup__wrapper"> 
+                <div class="popup__video"> <picture><source srcset="img/video.webp" type="image/webp"><img src="img/video.png" alt="" draggable="false" loading="lazy"></picture><a class="testimonials__play" href="#!"><img src="img/testimonials-play.svg" alt="" draggable="false" loading="lazy"></a></div>
+              </div>
+            </div>
+            <div class="popup" id="password"> 
+              <div class="popup__overlay popup-close"></div>
+              <form class="popup__content" action="#" method="post">
+                <form class="popup__form" action="#"> 
+                  <p class="popup__content-title">Восстановление пароля</p>
+                  <p class="popup__content-desc">Лучше новый, чем хорошо забытый старый</p>
+                  <input class="popup__content-input input" type="text" placeholder="Введите email">
+                  <button class="popup__content-btn btn-primary" type="submit">Восстановить</button>
+                  <div class="popup__content-link">
+                    <button class="popup-open" type="button" data-target="signin">Войти</button>  или  
+                    <button class="popup-open" type="button" data-target="signup">Зарегистрироваться</button>
+                  </div>
+                </form>
+              </form>
+            </div>
+            <div class="popup" id="help"> 
+              <div class="popup__overlay popup-close"></div>
+              <div class="popup__wrapper"> 
+                <div class="popup__body"> 
+                  <div class="popup__info">
+                    <h2 class="popup__info-title">Личные данные</h2>
+                    <div class="popup__info-links">
+                      <button class="popup__info-btn change-content active" type="button" data-target="personals">Личные данные            </button>
+                      <button class="popup__info-btn change-content" type="button" data-target="payment">Оплата            </button>
+                      <button class="popup__info-btn change-content" type="button" data-target="helpcontent">Помощь</button>
+                    </div>
+                    <div class="popup__content-seperator"></div>
+                    <button class="popup__info-back" type="button"><img src="img/selling-arrow.svg" alt="" draggable="false" loading="lazy">  Назад</button>
+                  </div>
+                  <form class="popup__content dn active" action="#" method="post" id="personals">
+                    <p class="popup__content-title">Редактирование личных данных</p>
+                    <div class="popup-input">
+                      <button class="popup-input-btn" type="button"><img src="img/popup-dots.svg" alt="" draggable="false" loading="lazy"></button>
+                      <input class="popup__content-input input" type="text" placeholder="Скайвокер">
+                    </div>
+                    <div class="popup-input">
+                      <button class="popup-input-btn" type="button"><img src="img/popup-dots.svg" alt="" draggable="false" loading="lazy"></button>
+                      <div class="offer__form-input offer__form-input_tel popup__content-input"><span>+7</span>
+                        <hr>
+                        <input class="input" type="tel" placeholder="Введите телефон" required>
+                      </div>
+                    </div>
+                    <div class="popup-input">
+                      <button class="popup-input-btn" type="button"><img src="img/popup-dots.svg" alt="" draggable="false" loading="lazy"></button>
+                      <input class="popup__content-input input" type="text" placeholder="Введите e-mail">
+                    </div>
+                    <p class="popup__content-title">Управление паролем</p>
+                    <div class="popup-input">
+                      <button class="popup-input-btn" type="button"><img src="img/popup-dots.svg" alt="" draggable="false" loading="lazy"></button>
+                      <input class="popup__content-input input" type="text" placeholder="Введите старый пароль">
+                    </div>
+                    <div class="popup-input">
+                      <button class="popup-input-btn" type="button"><img src="img/popup-dots.svg" alt="" draggable="false" loading="lazy"></button>
+                      <input class="popup__content-input input" type="text" placeholder="Введите новый пароль">
+                    </div>
+                    <div class="popup-input">
+                      <button class="popup-input-btn" type="button"><img src="img/popup-dots.svg" alt="" draggable="false" loading="lazy"></button>
+                      <input class="popup__content-input input" type="text" placeholder="Повторите новый пароль">
+                    </div>
+                    <button class="popup__content-btn btn-primary" type="submit">Сохранить</button>
+                  </form>
+                  <form class="popup__content dn" action="#" method="post" id="payment">
+                    <h2 class="popup__content-title">Купленные продукты BINUNI</h2>
+                    <div class="popup__buying"> 
+                      <div class="popup__buying-img"> <picture><source srcset="img/popup-buying.webp" type="image/webp"><img src="img/popup-buying.png" alt="" draggable="false" loading="lazy"></picture></div>
+                      <p class="popup__buying-p">Вы еще ничего не купили</p>
+                    </div>
+                    <div class="popup__trading"> 
+                      <div class="popup__trading-top"> <span class="popup__trading-data">12.02.2022</span><span class="popup__trading-price">3 999 р.</span></div>
+                      <p class="popup__trading-p">Вы преобрели Курс торговли на Binance Future для новичков</p>
+                      <p class="popup__trading-link">Перейти к обучению</p>
+                    </div>
+                  </form>
+                  <form class="popup__content dn" action="#" method="post" id="helpcontent">
+                    <h2 class="popup__content-title">Помощь</h2>
+                    <p class="popup__content-desc">Свяжитесь с нами и мы ответим в ближайшее время</p>
+                    <div class="custom-select popup__content-select">
+                      <select>
+                        <option value="" selected disabled hidden>Выберите категорию вопроса</option>
+                        <option value="category">category </option>
+                        <option value="category">subject</option>
+                      </select>
+                    </div>
+                    <input class="popup__content-input input" type="text" placeholder="Введите телефон">
+                    <textarea class="popup__content-textarea" name="textarea" placeholder="Введите сообщение"></textarea>
+                    <button class="popup__content-btn btn-primary" type="submit">Отправить</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20220504125548"> </script>
+    <script src="js/app.min.js?_v=20220504125548"> </script>
+  </body>
+</html>
