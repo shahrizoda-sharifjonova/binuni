@@ -5571,6 +5571,11 @@ img {
     display: none !important;
   }
 
+  .header__list .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .footer {
     padding-top: 54px;
     padding-bottom: 37px;
@@ -6101,8 +6106,6 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 
   .header__btns {

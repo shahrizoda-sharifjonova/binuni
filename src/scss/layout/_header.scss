@@ -90,12 +90,14 @@
             display: flex;
             align-items: center;
             column-gap: 34px;
+            @include media(992){
+                padding-left: 15px;
+                padding-right: 15px;
+            }
             @include media(768){
                 flex-direction: column;
                 row-gap: 8px;
                 align-items: flex-start;
-                padding-left: 15px;
-                padding-right: 15px;
             }
         }
         &.active{
