@@ -189,6 +189,11 @@
         align-items: center;
         width: 130px;
         height: 39px;
+        transition: 300ms ease-out;
+        &:hover{
+            background: #0ECB81;
+            color: #fff;
+        }
         @include media(1400){
             width: 50%;
         }

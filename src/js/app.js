@@ -53,18 +53,39 @@ new Swiper(".testimonials__swiper", {
     }
 });
 
-new Swiper(".markets__swiper", {
+
+if(document.querySelector('.markets-button-num-next')){
+  const next = document.querySelector('.markets-button-num-next');
+  const prev = document.querySelector('.markets-button-num-prev');
+  const slides = document.querySelectorAll(".markets__slide");
+  const slideCount = slides.length;
+  if(slideCount < 10){
+    next.innerHTML = `0${slideCount}`;
+  }else{
+    next.innerHTML = `${slideCount}`;
+  }
+  new Swiper(".markets__swiper", {
     slidesPerView: 1,
     modules: [Navigation, Pagination],
     pagination: {
-        el: ".swiper-pagination",
-        type: "progressbar",
+      el: ".markets-pagination",
+      type: "progressbar",
     },
     navigation: {
-        nextEl: ".markets-button-next",
-        prevEl: ".markets-button-prev",
+      nextEl: ".markets-button-next",
+      prevEl: ".markets-button-prev",
     },
-});
+    on: {
+      realIndexChange: (swiper) => {
+        if(swiper.realIndex < 10){
+          prev.innerHTML = `0${swiper.realIndex + 1}`;
+        }else{
+          prev.innerHTML = `${swiper.realIndex + 1}`;
+        }
+      }
+    }
+  });
+}
 
 new Swiper(".comments__swiper", {
     slidesPerView: 1,

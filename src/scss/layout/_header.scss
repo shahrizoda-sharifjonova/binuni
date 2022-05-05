@@ -181,6 +181,29 @@
         line-height: 125%;
         letter-spacing: 0.035em;
         color: #FFFFFF;
+        &:not(.btn-primary){
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: -4px;
+                width: 100%;
+                height: 1px;
+                background: #fff;
+                border-radius: 2px;
+                opacity: 0;
+                visibility: hidden;
+                transition: 100ms ease-out;
+                transform: translateY(5px);
+            }
+            &:hover{
+                &::before{
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0);
+                }
+            }
+        }
         & ~ .btn-primary{
             width: 166px;
             height: 31px;

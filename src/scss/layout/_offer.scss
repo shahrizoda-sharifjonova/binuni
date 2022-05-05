@@ -383,7 +383,11 @@
             align-items: center;
             justify-content: center;
             background: #FCD535;
-            border-radius: 3px;          
+            border-radius: 3px;   
+            transition: 300ms ease-out;            
+            &:hover{
+                box-shadow: 0 4px 14px rgb(252 213 53 / 25%);
+            }       
         }
     }
 }

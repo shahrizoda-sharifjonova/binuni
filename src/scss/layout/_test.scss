@@ -171,6 +171,11 @@
         padding: 15px;
         display: flex;
         align-items: center;
+        &:hover{
+            .test__txt{
+                color: #0ECB81;
+            }
+        }
         @include media(1400){
             max-width: calc(50% - 12px);
             width: calc(50% - 13px);
@@ -185,7 +190,7 @@
             padding: 14px 20px 14px 15px;
         }
         &:nth-of-type(3){
-            padding: 22px 3px 22px 12px;
+            padding: 22px 20px 22px 12px;
             @include media(768){
                 padding: 15px 105px 15px 15px;
             }
@@ -199,6 +204,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
+        transition: 300ms ease-out;
         line-height: 125%;
         color: #000000;
         padding-left: 23px;
