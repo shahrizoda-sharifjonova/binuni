@@ -2943,8 +2943,29 @@
   color: #F0B90B;
 }
 
+.popup#password-popup .popup-close {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.popup#password-popup .popup-close:hover {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.popup#password-popup .popup-close svg path {
+  fill: #000;
+}
+
 .popup#password-popup .popup__content {
   padding: 40px 25px 45px 25px;
+  position: relative;
 }
 
 .popup#password-popup .popup__content-title {
@@ -3548,6 +3569,14 @@
   letter-spacing: 0.035em;
   margin-bottom: 30px;
   color: #000000;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.popup__content-btn:hover {
+  -webkit-box-shadow: 0 4px 14px rgba(252, 213, 53, 0.25);
+          box-shadow: 0 4px 14px rgba(252, 213, 53, 0.25);
 }
 
 .popup__content-link {
@@ -4371,6 +4400,14 @@ input[type=checkbox] {
   height: 16px;
   min-width: 16px;
   border-radius: 4px;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+  cursor: pointer;
+}
+
+input[type=checkbox]:hover {
+  background: #0ECB8140;
 }
 
 input[type=checkbox]:checked {
@@ -6614,6 +6651,10 @@ img {
   .popup#fail .popup__title {
     max-width: 350px;
     width: 100%;
+  }
+
+  .popup#password-popup .popup-close svg path {
+    fill: #fff;
   }
 
   .popup#password-popup .popup__content {

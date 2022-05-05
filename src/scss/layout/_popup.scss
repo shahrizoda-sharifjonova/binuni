@@ -124,8 +124,29 @@
         }
     }
     &#password-popup{
+        .popup{
+            &-close{
+                cursor: pointer;
+                position: absolute;
+                top: 15px;
+                right: 25px;
+                transition: 300ms ease-out;
+                &:hover{
+                    transform: rotate(-180deg);
+                }
+                svg{
+                    path{
+                        fill: #000;
+                        @include media(768){
+                            fill: #fff;
+                        }
+                    }
+                }
+            }
+        }
         .popup__content{
             padding: 40px 25px 45px 25px;
+            position: relative;
             @include media(1400){
                 max-width: 685px;
                 width: 100%;
@@ -818,6 +839,10 @@
             letter-spacing: 0.035em;
             margin-bottom: 30px;
             color: #000000;  
+            transition: 300ms ease-out;
+            &:hover{
+                box-shadow: 0 4px 14px rgb(252 213 53 / 25%);
+            }
             @include media(1200){
                 height: 60px;
                 margin-bottom: 24px;

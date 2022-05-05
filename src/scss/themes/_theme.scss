@@ -83,6 +83,11 @@ input[type="checkbox"]{
     height: 16px;
     min-width: 16px;
     border-radius: 4px;
+    transition: 300ms ease-out;
+    cursor: pointer;
+    &:hover{
+        background: #0ECB8140;
+    }
     &:checked{
         background: url('../img/chk.svg'), #fff;
         background-size: 100% 100%;
